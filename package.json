@@ -1,10 +1,9 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "By The Bay blog",
+  "description": "Updates and things about us as a company",
   "version": "1.1.3",
-  "author": "Austin Green",
+  "author": "By The Bay",
   "dependencies": {
-    "bulma": "^0.6.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify": "^1.0.19",
@@ -25,7 +24,7 @@
     "uuid": "^3.2.1"
   },
   "keywords": [
-    "gatsby"
+    "by the bay"
   ],
   "license": "MIT",
   "main": "n/a",
