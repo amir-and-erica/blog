@@ -1,33 +1,60 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Row, Col } from 'react-flexbox-grid';
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+import {Spacer} from '../layouts/util'
+
+const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 5px;
+`
+const Subtitle = styled.p`
+  font-style: italic;
+  text-align: center;
+`
 
 export const BlogPostTemplate = (props) => {
   const { content, contentComponent, description, tags, title, helmet,} = props;
   const PostContent = contentComponent || Content
 
   const postTags = tags && tags.length ? (
-    <div>
+    <span>
       <ul>
         {tags.map(tag => (
           <li key={tag + `tag`}>
-            <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+            <Link to={`/tags/${kebabCase(tag)}/`}>
+              <h3>{tag}</h3>
+            </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </span>
   )
   : null;
 
   return (
     <div>
       {helmet || ''}
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <PostContent content={content} />
-      {postTags}
+      <Row>
+        <Col
+          xsOffset={1} xs={10}
+          smOffset={2} sm={8}
+          mdOffset={3} md={6}
+          lgOffset={3} lg={6}
+        >
+          <Title>{title}</Title>
+          <Subtitle>{description}</Subtitle>
+          <Spacer height={30}/>
+          <PostContent content={content} />
+          <Spacer height={30}/>
+          <h4>Tags</h4>
+          <Spacer height={15}/>
+          {postTags}
+        </Col>
+      </Row>
     </div>
   )
 }
