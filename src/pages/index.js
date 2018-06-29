@@ -8,11 +8,11 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     const allPosts = posts.map(({ node: post }) => (
-        <div className="content" key={post.id}>
-          <Link className="has-text-primary" to={post.fields.slug}>
+        <div key={post.id}>
+          <Link to={post.fields.slug}>
             {post.frontmatter.title}
           </Link>
-          <span>&bull;</span>
+          <span> &bull; </span>
           <p>{post.frontmatter.date}</p>
 
           {post.excerpt}
@@ -23,7 +23,7 @@ export default class IndexPage extends React.Component {
       ));
     return (
       <div>
-        <div className="content">
+        <div>
           <h1>Latest Stories</h1>
         </div>
         {allPosts}

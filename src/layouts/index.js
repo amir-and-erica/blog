@@ -8,7 +8,7 @@ const TemplateWrapper = (props) => (
   <div>
     <Helmet title="By The Bay blog" />
     <Navbar />
-    <div>{props.children()}</div>
+    {props.children()}
   </div>
 )
 

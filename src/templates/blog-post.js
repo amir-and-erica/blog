@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = (props) => {
   const { content, contentComponent, description, tags, title, helmet,} = props;
@@ -63,6 +62,15 @@ BlogPost.propTypes = {
 }
 
 export default BlogPost
+
+const HTMLContent = (props) => (
+  <div dangerouslySetInnerHTML={{ __html: props.content }} />
+)
+
+const Content = ({ content }) => (
+  <div>{content}</div>
+)
+
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
