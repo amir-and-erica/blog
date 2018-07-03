@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: amir-and-erica/blog
+  api_root: https://api.github.com
 
 media_folder: static/img
 public_folder: /img
