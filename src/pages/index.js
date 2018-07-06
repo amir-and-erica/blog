@@ -11,6 +11,7 @@ const PostTitle = styled.h2`
   text-decoration: none;
   color: #323232;
   text-align: right;
+  margin: 0;
   @media not all and (hover: none) {
     &:hover {
       text-decoration: underline;
@@ -44,6 +45,7 @@ const BlogDescription = styled.div`
 `
 const BlogName = styled.h1`
   font-size: 70px;
+  letter-spacing: -4px;
 `
 const Excerpt = styled.div`
   margin-top: 37px;

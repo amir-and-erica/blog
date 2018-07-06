@@ -78,7 +78,8 @@ h2 {
   line-height: 32px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 h3 {
   font-family: 'Roboto Condensed', 'Helvetica Condensed', 'Helvetica Neue', Helvetica, sans-serif;
@@ -86,8 +87,8 @@ h3 {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 0;
 }
+
 h4 {
 	font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 400;
@@ -126,8 +127,14 @@ input:-moz-ui-invalid {
   box-shadow:none;
 }
 
-img {
-  width: 100%;
+blockquote {
+  margin-left: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-style: italic;
+  padding-left: 40px;
+  border-left: 3px solid #eee;
+
 }
 
 /*in src/june-5/NavigationComponent*/

@@ -30,12 +30,6 @@ const Padding = styled.div`
   width: 40px;
 `
 
-const ReturnLink = styled.a`
-  text-decoration: none;
-  color: black;
-  padding: 3px 20px;
-`
-
 const Logo = styled.img`
   height: 30px;
   width: auto;
@@ -94,9 +88,6 @@ class Navbar extends React.Component {
           </Flex>
           <Flex>
             {links}
-            <ReturnLink href="https://bythebay.cool/">
-              <h4>www.bythebay.cool</h4>
-            </ReturnLink>
             <Padding/>
           </Flex>
         </InnerContainer>

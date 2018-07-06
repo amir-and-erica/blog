@@ -1,6 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+import {Spacer} from '../layouts/util'
+
+const Container = styled.div`
+  text-align: center;
+`
+
 
 class TagRoute extends React.Component {
   render() {
@@ -9,11 +16,9 @@ class TagRoute extends React.Component {
     const postLinks = posts.map(post => {
       const {frontmatter, fields} = post.node;
       return(
-        <li key={fields.slug}>
-          <Link to={fields.slug}>
-            <h2>{frontmatter.title}</h2>
-          </Link>
-        </li>
+        <Link key={fields.slug} to={fields.slug}>
+          <h2>{frontmatter.title}</h2>
+        </Link>
       )
     })
     const tag = pathContext.tag
@@ -24,16 +29,16 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
-      <div>
+      <React.Fragment>
         <Helmet title={`${tag} | ${title}`} />
-        <div>
-          <h3>{tagHeader}</h3>
-          <ul>
-            {postLinks}
-          </ul>
-          <Link to="/tags/">Browse all tags</Link>
-        </div>
-      </div>
+        <Spacer height={70}/>
+        <Container>
+          <h4>{tagHeader}</h4>
+          {postLinks}
+          <Spacer height={70}/>
+          <Link to="/tags/"><h3>Browse all topics</h3></Link>
+        </Container>
+      </React.Fragment>
     )
   }
 }
