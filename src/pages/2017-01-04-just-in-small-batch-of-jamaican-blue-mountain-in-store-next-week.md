@@ -1,17 +1,16 @@
 ---
 templateKey: blog-post
 title: 'Why is By The Bay nonpartisan? '
-date: 2017-01-04T15:04:10.000Z
+date: '2018-07-09T08:00:00-07:00'
 description: >-
   People have asked us "Why did you launch a local media company that's
   nonpartisan? Wouldn't it be easier to reach an audience with a conservative or
   liberal point of view?" Sure, maybe so, but for us, the answer is simple:
   We're nonpartisan because we're optimists.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - nonpartisan
+  - journalism
+  - voice
 ---
 ## What does 'nonpartisan' mean?
 
@@ -29,4 +28,4 @@ That being said, there's a difference between having a perspective and fairly re
 
 I will never forget the shock I felt the night of the 2016 US presidential election. It was the first of many existential cracks in my social media echo chamber. I felt disempowered from the political process and disenchanted by national news. I kept asking myself, "How did I not see this coming?" 
 
-Since then, I've come to realize that being nonpartisan isn't neutral. It's loaded with optimism. It's fueled by the belief that we can inspire people to act if we can help them understand complex and often contradictory sides to an issue. It's realizing that the pursuit of the truth, or journalism, is never-ending. We strive to examine and challenge what we claim to know because in all honesty, we don't know much. But our commitment to never stop trying.
+Since then, I've come to realize that being nonpartisan isn't neutral. It's loaded with optimism. It's fueled by the belief that we can inspire people to act if we can help them understand complex and often contradictory sides to an issue. It's realizing that the pursuit of the truth, or journalism, is never-ending. We strive to examine and challenge what we claim to know because in all honesty, we don't know much. But our commitment is to never stop trying.
