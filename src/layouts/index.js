@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import ReturnLink from '../components/ReturnLink'
 import Footer from './footer'
 import {Spacer} from './util'
-import './style.css'
+import '../cms/style.css'
 
 const TemplateWrapper = (props) => (
   <div style={{background:"white"}}>
