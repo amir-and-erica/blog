@@ -12,9 +12,9 @@ tags:
 ---
 ## What does 'nonpartisan' mean?
 
-"Nonpartisan" is a loaded term in journalism that's often blurred with [objectivity and impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/). Many people say it's impossible to be truly nonpartisan. At By The Bay, our definition of nonpartisan is "attempting to accurately and fairly represent a multitude of perspectives." 
+"Nonpartisan" is a loaded term in journalism. It's often blurred with [objectivity and impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/). Many people say it's impossible to be truly nonpartisan. For us at By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives." 
 
-We recognize not all opinions are equal and we do our best to reflect the truth by making our reporting and editorial processes as transparent as possible.
+We not all opinions are equal and we do our best to reflect the truth by making our reporting and editorial processes as transparent as possible.
 
 ## But everyone has a point of view. Don't you?
 
