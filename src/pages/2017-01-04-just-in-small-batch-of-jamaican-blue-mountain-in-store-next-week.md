@@ -3,10 +3,8 @@ templateKey: blog-post
 title: 'Why is By The Bay nonpartisan? '
 date: '2018-07-09T08:00:00-07:00'
 description: >-
-  People have asked "Why did you launch a local media company that's
-  nonpartisan? Wouldn't it be easier to grow with a conservative or liberal
-  point of view?" Maybe so, but the answer is simple: We're nonpartisan because
-  we're radical optimists.
+  People have asked us "Why did you launch a nonpartisan local media company in
+  an era of political polarization?" The answer is simple: we're optimists.
 tags:
   - nonpartisan
   - journalism
@@ -14,7 +12,7 @@ tags:
 ---
 ## What does 'nonpartisan' mean?
 
-"Nonpartisan" is a loaded term in journalism that's often blurred with [objectivity and impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/). Many people say it's impossible to be truly nonpartisan. At By The Bay, we define being nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives." 
+"Nonpartisan" is a loaded term in journalism that's often blurred with [objectivity and impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/). Many people say it's impossible to be truly nonpartisan. At By The Bay, our definition of nonpartisan is "attempting to accurately and fairly represent a multitude of perspectives." 
 
 We recognize not all opinions are equal and we do our best to reflect the truth by making our reporting and editorial processes as transparent as possible.
 
