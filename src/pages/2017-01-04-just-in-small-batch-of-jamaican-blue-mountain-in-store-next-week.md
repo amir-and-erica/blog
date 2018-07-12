@@ -20,16 +20,14 @@ We recognize not all opinions are equal and we do our best to reflect the truth 
 
 ## But everyone has a point of view. Don't you?
 
-It's true, we do. We live in SF. We've been covering CA and SF politics for the past year, not for the past decade. Jimmy and I share a dry, sarcastic, occasionally cheesy sense of humor, and we're not afraid to express our personality in our work. 
+It's true, we do. We live in SF. We've been covering CA and SF politics for the past year (not for the past decade). Jimmy and I share a dry, sarcastic, occasionally cheesy sense of humor, and we're not afraid to express our personality in our work. 
 
-That being said, there's a difference between having a perspective and fairly representing other perspectives. We spend countless hours researching opposing arguments and opposing-opposing arguments so we can accurately explain them to you. As a media company, we don't attempt to adjudicate. We want to present complex information in an easy to understand way, and empower you to get involved (aka vote!).
+That being said, there's a difference between having a perspective and fairly representing other perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can confidently explain them. As a media company, we don't attempt to adjudicate. Our goal is to present complex information in a useful, easy-to-understand way so you feel empowered to act, aka vote.
 
-## What's optimism got to do with it?
+## What does optimism have to do with it?
 
-Well, I'll never forget the shock I felt the night of the 2016 US Presidential election. It was the first of many existential cracks in my social media echo chamber. I felt disenchanted by national news, and as a result, disempowered from the political process. I kept asking myself, "How did I not see this coming?" 
+Well, I'll never forget my shock the night of the 2016 US Presidential election. My inability to anticipate the results revealed one of many existential cracks in my social media echo chamber. For months, I felt disenchanted by national news stories and disempowered from the political process. I kept asking myself, "How did I not see this coming? Why was I so surprised?" 
 
-Since then, I've come to understand that being nonpartisan isn't neutral; It's loaded with optimism. We're fueled by the belief that we can inspire people to act, vote, be a better citizen if we can help them understand complex and often contradictory sides to important issues. 
+After nearly a year of ruminating, I've come to realize that nonpartisan isn't neutral. Rather, it's loaded with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be a responsible citizen. With fair and accurate reporting, we hope no one will be caught off guard by life-changing election results (like me).   
 
-At By The Bay, we recognize the pursuit of the truth, aka journalism, is never-ending. We're relentlessly challenging and investigating what we think we know because, to be honest, we don't know much. Our mission is to learn and make it easier for you to join our journey. 
-
-We hope you will.
+At By The Bay, we recognize the pursuit of truth, aka journalism, is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, we don't know much. Our goal is to learn. And if we do our jobs, it'll be easier for you to learn with us too. We hope you will.
