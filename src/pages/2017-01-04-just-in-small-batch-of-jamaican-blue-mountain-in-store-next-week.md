@@ -30,4 +30,6 @@ Well, I'll never forget my shock the night of the 2016 US Presidential election.
 
 After nearly a year of ruminating, I've come to realize that nonpartisan isn't neutral. Rather, it's loaded with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be a responsible citizen. With fair and accurate reporting, we hope no one will be caught off guard by life-changing election results (like me).   
 
-At By The Bay, we recognize the pursuit of truth, aka journalism, is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, we don't know much. Our goal is to learn. And if we do our jobs, it'll be easier for you to learn with us too. We hope you will.
+At By The Bay, we recognize the pursuit of truth is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, shhh, we don't know much. Our goal is to learn. And if we do our jobs: researching, writing, creating beautiful local voter guides, it'll be easier for you to learn with us too. 
+
+We hope you will.
