@@ -12,15 +12,15 @@ tags:
 ---
 ## What does 'nonpartisan' mean?
 
-"Nonpartisan" has become a controversial, confusing term in journalism. Many people say it's impossible to be truly nonpartisan, and the word is often blurred with "[objectivity" and "impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/)." At By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives." 
+"Nonpartisan" has become a controversial, confusing term in journalism. The word is often blurred with "[objectivity" and "impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/)." Many people argue it isn't possible to be nonpartisan, everyone has a point of view. At By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives." 
 
-Not all opinions are equal, and it's ridiculous to try and describe every single point of view, but we do our best to help people understand dense, seemingly impenetrable topics. I mean, we cover local politics.
+We recognize not all opinions are equal (i.e. I believe in aliens vs. I believe in gravity) and we can't describe every single point of view that ever existed. Our mission is to help you understand dense, seemingly impenetrable topics, like local politics. 
 
-## But everyone has a point of view. 
+## Your nonpartisan with a point of view? 
 
-It's true, we do. We live in SF. We've been covering CA and SF politics for the past year (not for the past decade). Jimmy and I share a dry, sarcastic, occasionally cheesy sense of humor, and we're not afraid to express our personality in our work. 
+Absolutely, we have a perspective. For instance, Jimmy and I live in SF. We've been covering CA and SF politics for the past year (not the past decade). We share a dry, occasionally cheesy sense of humor, and we're not afraid to express our personality in our work. 
 
-That being said, there's a difference between having a perspective and fairly representing other perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can confidently explain them. As a media company, we don't attempt to adjudicate. Our goal is to present complex information in a useful, easy-to-understand way so you feel empowered to act, aka vote.
+That being said, there's a difference between describing a singular perspective and striving to represent a variety of perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can confidently explain them. As a media company, we don't attempt to adjudicate. Our goal is to present complex information in a useful, easy-to-understand way so you feel empowered to act, aka vote.
 
 ## What does optimism have to do with it?
 
