@@ -6,10 +6,10 @@ const BlogPostPreview = ({ entry, widgetFor }) => (
   <BlogPostTemplate
     content={widgetFor('body')}
     frontmatter={{
-      title:{entry.getIn(['data','title'])},
-      description:{entry.getIn(['data','description'])},
-      date:{entry.getIn(['data','date'])},
-      author:{entry.getIn(['data','author'])},
+      title:entry.getIn(['data','title']),
+      description:entry.getIn(['data','description']),
+      date:entry.getIn(['data','date']),
+      author:entry.getIn(['data','author']),
     }}
   />
 )
