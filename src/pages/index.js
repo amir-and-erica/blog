@@ -7,6 +7,7 @@ import Color from '../layout/colors'
 import IndexPagePost from '../components/IndexPagePost'
 import {Spacer} from '../layout/util'
 import Head from '../layout/head'
+import TemplateWrapper from '../layout/index'
 
 const PostTitle = styled.h2`
   text-decoration: none;
@@ -96,14 +97,14 @@ class IndexPage extends React.Component {
     ));
 
     return (
-      <React.Fragment>
+      <TemplateWrapper>
         <Head/>
         <BlogTitle>
           <BlogName>BTW</BlogName>
           <BlogDescription>Our sidebar on journalism, local issues, and elections.</BlogDescription>
         </BlogTitle>
         {allPosts}
-      </React.Fragment>
+      </TemplateWrapper>
     )
   }
 }
