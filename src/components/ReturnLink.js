@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Color from '../layouts/colors'
+import Color from '../layout/colors'
 
 const ReturnLink = styled.a`
   text-decoration: none;

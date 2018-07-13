@@ -32,8 +32,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
+      const slug = edge.node.fields.slug
       createPage({
-        path: edge.node.fields.slug,
+        path: slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`

@@ -2,11 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import Helmet from 'react-helmet'
+import Head from '../layout/head'
+import { kebabCase } from 'lodash'
 import styled from 'styled-components'
-import {Spacer} from '../layouts/util'
+import {Spacer} from '../layout/util'
 import Line from '../components/rounded-line'
 import TagsSection from '../components/TagsSection'
-import '../layouts/template-styles/blog-post-style-1.css'
+import TemplateWrapper from '../layout/index'
+import '../layout/template-styles/blog-post-style-1.css'
 
 const Title = styled.h1`
   text-align: center;
@@ -21,6 +24,41 @@ const Subtitle = styled.p`
   text-align: center;
 `
 
+const Date = styled.h4`
+  color: #999;
+`
+
+
+const BlogPost = ({ data }) => {
+  const { markdownRemark: post } = data
+  return (
+    <TemplateWrapper>
+      <BlogPostTemplate
+        content={post.html}
+        contentComponent={HTMLContent}
+        frontmatter={post.frontmatter}
+        slug={post.fields.slug}
+      />
+    </TemplateWrapper>
+  )
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+}
+
+export default BlogPost
+
+const HTMLContent = (props) => (
+  <div dangerouslySetInnerHTML={{ __html: props.content }} />
+)
+
+const Content = ({ content }) => (
+  <div>{content}</div>
+)
+
 export class BlogPostTemplate extends React.Component {
 
   componentDidMount() {
@@ -31,12 +69,17 @@ export class BlogPostTemplate extends React.Component {
 
   render() {
 
-    const { content, contentComponent, description, tags, title, helmet,} = this.props;
+    const { content, contentComponent, frontmatter, slug} = this.props;
+    const  { description, tags, title, date, author} = frontmatter;
     const PostContent = contentComponent || Content;
-
     return (
       <div>
-        {helmet || ''}
+        <Head
+          url={`https://blog.bythebay.cool/${slug}`}
+          title={`${title} – By The Way`}
+          headline={title || "By The Way blog post"}
+          description={description || "Yes of course it's something interesting."}
+        />
         <Row>
           <Col
             xsOffset={1} xs={10}
@@ -54,6 +97,8 @@ export class BlogPostTemplate extends React.Component {
           >
             <Subtitle>{description}</Subtitle>
             <Spacer height={30}/>
+            <Date>{date}</Date>
+            <Date>{author}</Date>
             <Line/>
           </Col>
         </Row>
@@ -76,44 +121,17 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-
-  return (
-    <BlogPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
-    />
-  )
-}
-
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
-
-export default BlogPost
-
-const HTMLContent = (props) => (
-  <div dangerouslySetInnerHTML={{ __html: props.content }} />
-)
-
-const Content = ({ content }) => (
-  <div>{content}</div>
-)
-
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
+        author
         date(formatString: "MMMM DD, YYYY")
         title
         description

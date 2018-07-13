@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Color from '../layouts/colors'
+import Color from '../layout/colors'
 import styled from 'styled-components'
-import logo from '../layouts/images/logo-filled.png'
-import logoText from '../layouts/images/text.png'
+import logo from '../layout/images/logo-filled.png'
+import logoText from '../layout/images/text.png'
 
 const Nav = styled.div`
   position: sticky;

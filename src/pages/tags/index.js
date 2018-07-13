@@ -1,9 +1,9 @@
 import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
+import Head from '../../layout/head'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {TagsContainer, TagLink, TagTitle} from '../../components/TagsSection'
+import {kebabCase} from 'lodash'
 
 const Container = styled.div`
   margin-left: auto;
@@ -18,7 +18,12 @@ const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
   <Container >
-    <Helmet title={`Tags | ${title}`} />
+    <Head
+      url={`https://blog.bythebay.cool/tags/`}
+      title={`Tags | ${title}`}
+      headline={`${title} posts by tags`}
+      description="A collection of posts"
+    />
 
     <h1>Browse by topic</h1>
     <TagsContainer >

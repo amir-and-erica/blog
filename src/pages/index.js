@@ -3,9 +3,10 @@ import { Row, Col } from 'react-flexbox-grid';
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import Color from '../layouts/colors'
+import Color from '../layout/colors'
 import IndexPagePost from '../components/IndexPagePost'
-import {Spacer} from '../layouts/util'
+import {Spacer} from '../layout/util'
+import Head from '../layout/head'
 
 const PostTitle = styled.h2`
   text-decoration: none;
@@ -96,9 +97,10 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
+        <Head/>
         <BlogTitle>
           <BlogName>BTW</BlogName>
-          <BlogDescription>A blog on our thoughts on journalism, local issues, and elections.</BlogDescription>
+          <BlogDescription>Our sidebar on journalism, local issues, and elections.</BlogDescription>
         </BlogTitle>
         {allPosts}
       </React.Fragment>
