@@ -96,14 +96,14 @@ class IndexPage extends React.Component {
     ));
 
     return (
-      <React.Fragment>
+      <div>
         <Head/>
         <BlogTitle>
           <BlogName>BTW</BlogName>
           <BlogDescription>Our sidebar on journalism, local issues, and elections.</BlogDescription>
         </BlogTitle>
         {allPosts}
-      </React.Fragment>
+      </div>
     )
   }
 }

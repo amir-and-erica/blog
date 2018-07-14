@@ -10,10 +10,12 @@ const TemplateWrapper = (props) => (
   <div style={{background:"white"}}>
     <Navbar />
     <ReturnLink/>
-    {props.children}
+    {props.children()}
     <Spacer height={70}/>
     <Footer/>
   </div>
 )
+
+
 
 export default TemplateWrapper
