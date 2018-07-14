@@ -12,6 +12,12 @@ const PostInfoContainer = styled.div`
   margin-right: 20px;
 `
 
+const Line = styled.div`
+  margin-top: 12px;
+  border-top: 4px solid ${Color('pink')};
+  height: 0;
+`
+
 const PostTitle = styled.h2`
   text-decoration: none;
   color: #323232;
@@ -60,7 +66,7 @@ const BlogName = styled.h1`
   letter-spacing: -4px;
 `
 const Excerpt = styled.div`
-  margin-top: 37px;
+  margin-top: 22px;
   margin-bottom: 20px;
 `
 
@@ -96,7 +102,7 @@ class IndexPage extends React.Component {
             mdOffset={0} md={5}
             lgOffset={0} lg={5}
           >
-            <hr/>
+            <Line/>
             <Excerpt>{post.excerpt}</Excerpt>
             <KeepReading to={post.fields.slug}>
               <h3>Keep Reading →</h3>

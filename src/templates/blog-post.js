@@ -9,22 +9,26 @@ import {Spacer} from '../layouts/util'
 import Line from '../components/rounded-line'
 import TagsSection from '../components/TagsSection'
 import '../layouts/template-styles/blog-post-style-1.css'
+import Color from '../layouts/colors'
 
 const Title = styled.h1`
-  text-align: center;
+  text-align: left;
   margin-bottom: 5px;
-  margin-top: 60px;
-  @media screen and (max-width: 767px) {
-    margin-top: 30px;
-  }
 `
 const Subtitle = styled.p`
   font-style: italic;
-  text-align: center;
+  text-align: left;
+`
+const Author = styled.h4`
+  color: #777;
 `
 
 const Date = styled.h4`
   color: #999;
+`
+const Attribution = styled.div`
+  margin-top: 180px;
+  border-top: 4px solid ${Color('pink')};
 `
 
 
@@ -81,22 +85,24 @@ export class BlogPostTemplate extends React.Component {
           <Col
             xsOffset={1} xs={10}
             smOffset={2} sm={8}
-            mdOffset={2} md={8}
-            lgOffset={2} lg={8}
+            mdOffset={1} md={6}
+            lgOffset={1} lg={6}
           >
+            <Spacer height={60} xsHeight={30}/>
             <Title>{title}</Title>
+            <Subtitle>{description}</Subtitle>
           </Col>
           <Col
             xsOffset={1} xs={10}
             smOffset={2} sm={8}
-            mdOffset={3} md={6}
-            lgOffset={3} lg={6}
+            mdOffset={1} md={4}
+            lgOffset={1} lg={4}
           >
-            <Subtitle>{description}</Subtitle>
-            <Spacer height={30}/>
-            <Date>{date}</Date>
-            <Date>{author}</Date>
-            <Line/>
+            <Attribution>
+              <Spacer height={25}/>
+              <Author>By {author}</Author>
+              <Date>{date}</Date>
+            </Attribution>
           </Col>
         </Row>
         <div className="blog-post-body">
