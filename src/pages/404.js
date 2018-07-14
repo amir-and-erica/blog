@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from '../layout/head'
+import Head from '../layouts/head'
 export default () => (
   <div>
     <Head

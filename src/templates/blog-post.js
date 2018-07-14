@@ -2,14 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import Helmet from 'react-helmet'
-import Head from '../layout/head'
+import Head from '../layouts/head'
 import { kebabCase } from 'lodash'
 import styled from 'styled-components'
-import {Spacer} from '../layout/util'
+import {Spacer} from '../layouts/util'
 import Line from '../components/rounded-line'
 import TagsSection from '../components/TagsSection'
-import TemplateWrapper from '../layout/index'
-import '../layout/template-styles/blog-post-style-1.css'
+import '../layouts/template-styles/blog-post-style-1.css'
 
 const Title = styled.h1`
   text-align: center;
@@ -32,14 +31,12 @@ const Date = styled.h4`
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   return (
-    <TemplateWrapper>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         frontmatter={post.frontmatter}
         slug={post.fields.slug}
       />
-    </TemplateWrapper>
   )
 }
 
@@ -129,7 +126,7 @@ export const pageQuery = graphql`
         slug
       }
       frontmatter {
-        author
+        # author
         date(formatString: "MMMM DD, YYYY")
         title
         description

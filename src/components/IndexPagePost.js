@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import shadowPattern from '../layout/images/shadowPattern.png'
+import shadowPattern from '../layouts/images/shadowPattern.png'
 
 const Shadow = styled.div`
 	position: absolute;

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Spacer} from '../layout/util'
+import {Spacer} from '../layouts/util'
 import { kebabCase } from 'lodash'
 import Link from 'gatsby-link'
-import Color from '../layout/colors'
+import Color from '../layouts/colors'
 
 const Container = styled.div`
 `

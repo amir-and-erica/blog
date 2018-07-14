@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import {Spacer} from '../layout/util'
+import {Spacer} from '../layouts/util'
 
 const Container = styled.div`
   text-align: center;

@@ -24,7 +24,7 @@ image should be a url to an image, could be static.
     Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported.
     Only the first frame of an animated GIF will be used. SVG is not supported.
 USAGE:
-    import Head from 'layout/head'
+    import Head from 'layouts/head'
 
     <Head
       url=""
