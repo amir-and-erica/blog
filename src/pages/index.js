@@ -8,6 +8,10 @@ import IndexPagePost from '../components/IndexPagePost'
 import {Spacer} from '../layouts/util'
 import Head from '../layouts/head'
 
+const PostInfoContainer = styled.div`
+  margin-right: 20px;
+`
+
 const PostTitle = styled.h2`
   text-decoration: none;
   color: #323232;
@@ -28,7 +32,14 @@ const KeepReading = styled(Link)`
   margin-top: 10px;
   text-decoration: none;
 `
+const Author = styled.h4`
+  color: #999;
+  text-align: right;
+  margin-top: 10px;
+`
+
 const Date = styled.h4`
+  color: #999;
   margin-top: 5px;
   margin-bottom: 15px;
   text-align: right;
@@ -50,16 +61,15 @@ const BlogName = styled.h1`
 `
 const Excerpt = styled.div`
   margin-top: 37px;
-  margin-left: 20px;
   margin-bottom: 20px;
 `
 
 
 class IndexPage extends React.Component {
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
     const allPosts = posts.map(({ node: post }) => (
       <IndexPagePost key={post.id}>
         <Row>
@@ -69,12 +79,15 @@ class IndexPage extends React.Component {
             mdOffset={2} md={3}
             lgOffset={2} lg={3}
           >
-            <Date>{post.frontmatter.date}</Date>
-            <PostLink to={post.fields.slug}>
-              <PostTitle>
-                {post.frontmatter.title}
-              </PostTitle>
-            </PostLink>
+            <PostInfoContainer>
+              <Date>{post.frontmatter.date}</Date>
+              <PostLink to={post.fields.slug}>
+                <PostTitle>
+                  {post.frontmatter.title}
+                </PostTitle>
+              </PostLink>
+              <Author>By {post.frontmatter.author}</Author>
+            </PostInfoContainer>
           </Col>
 
           <Col
@@ -83,12 +96,12 @@ class IndexPage extends React.Component {
             mdOffset={0} md={5}
             lgOffset={0} lg={5}
           >
+            <hr/>
             <Excerpt>{post.excerpt}</Excerpt>
             <KeepReading to={post.fields.slug}>
               <h3>Keep Reading →</h3>
             </KeepReading>
             <Spacer height={10}/>
-            <hr/>
           </Col>
         </Row>
 
@@ -133,6 +146,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            author
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }
