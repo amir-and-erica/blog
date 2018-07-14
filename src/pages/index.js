@@ -14,8 +14,10 @@ const PostInfoContainer = styled.div`
 
 const Line = styled.div`
   margin-top: 12px;
-  border-top: 4px solid ${Color('pink')};
-  height: 0;
+  height: 4px;
+  border-radius: 2px;
+  width: 100%;
+  background-color: ${Color('pink')}
 `
 
 const PostTitle = styled.h2`

@@ -23,6 +23,9 @@ const Position = styled.div`
   left: -86px;
   transform: rotate(90deg);
   z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `
 
 class ReturnTag extends React.Component {
@@ -31,14 +34,6 @@ class ReturnTag extends React.Component {
     this.state = {
       width: 30,
     }
-  }
-
-  handleMouseEnter = () => {
-
-  }
-
-  handleMouseLeave = () => {
-
   }
 
   render() {

@@ -27,8 +27,11 @@ const Date = styled.h4`
   color: #999;
 `
 const Attribution = styled.div`
-  margin-top: 180px;
+  margin-top: ${props=>props.offset}px;
   border-top: 4px solid ${Color('pink')};
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
 `
 
 
@@ -61,15 +64,19 @@ const Content = ({ content }) => (
 )
 
 export class BlogPostTemplate extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { topOffset: 113 }
+  }
 
   componentDidMount() {
+    this.setState({topOffset: document.querySelector('h1').getBoundingClientRect().x});
     // TODO: add line to h2
     // console.log(document.getElementsByTagName('h2'))
     // document.querySelector('h2').insertAdjacentHTML('afterend','<span>hello</span>')
   }
 
   render() {
-
     const { content, contentComponent, frontmatter, slug} = this.props;
     const  { description, tags, title, date, author} = frontmatter;
     const PostContent = contentComponent || Content;
@@ -98,7 +105,7 @@ export class BlogPostTemplate extends React.Component {
             mdOffset={1} md={4}
             lgOffset={1} lg={4}
           >
-            <Attribution>
+            <Attribution offset={this.state.topOffset}>
               <Spacer height={25}/>
               <Author>By {author}</Author>
               <Date>{date}</Date>
@@ -106,9 +113,9 @@ export class BlogPostTemplate extends React.Component {
           </Col>
         </Row>
         <div className="blog-post-body">
+          <Spacer height={30}/>
           <PostContent content={content} />
           <Spacer height={30}/>
-
           <TagsSection data={tags}/>
         </div>
       </div>
