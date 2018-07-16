@@ -8,7 +8,7 @@ smDescription: asdfasdfasd
 color: pink
 date: '2018-07-16T15:00:30-07:00'
 description: >-
-  There's a cool trend happening in SF and beyond. And trust us, it's not boba
+  There's a cool trend happening in SF and beyond. And trust us, it's not bubble
   tea. 
 tags:
   - Corporate citizenship
