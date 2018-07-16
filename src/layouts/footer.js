@@ -11,6 +11,7 @@ const FooterWrapper = styled(Row)`
 	background:linear-gradient(45deg,${Color('darkpurple')},${Color('blue')});
 	padding-top: 70px;
 	padding-bottom: 70px;
+	box-shadow: 0 -1px 4px rgba(0,0,0,0.3);
   @media print {
     display: none;
   }
@@ -35,6 +36,10 @@ const Title = styled.h4`
 	color: white;
 	margin: 0;
 `;
+
+const SpecialLink = styled.a`
+	color: white;
+`
 
 const FooterLink = styled(Link)`
   font-family: Roboto Condensed, Helvetica Condensed, Helvetica Neue, Helvetica, sans-serif;
@@ -94,7 +99,9 @@ const Footer = () => {
 		  			lgOffset={1} lg={4}
 					>
 						<FinePrint>
-							Local politics drives our daily life. We strive to be nonpartisan and present all perspectives fairly, so please send us a note via <Acronym expanded='hi@bythebay.cool' acronym='email' singleClick={true} highlightOnClick={true}/> or <Acronym expanded='(415) 617-5970' acronym='text' singleClick={true} highlightOnClick={true}/> with any corrections, concerns, or questions.
+							You're looking at By The Bay's blog. Return to <SpecialLink href="https://www.bythebay.cool">By The Bay</SpecialLink>.
+							<br /><br />
+							Our mission is to turn residents into citizens. We strive to be nonpartisan and present all perspectives fairly, so please send us a note via <Acronym expanded='hi@bythebay.cool' acronym='email' singleClick={true} highlightOnClick={true}/> or <Acronym expanded='(415) 617-5970' acronym='text' singleClick={true} highlightOnClick={true}/> with any corrections, concerns, or questions.
 							<br /><br />
 							Pretty much all rights reserved &copy; By The Bay 2018
 						</FinePrint>

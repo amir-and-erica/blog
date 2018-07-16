@@ -15,6 +15,7 @@ const Nav = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 `
 const InnerContainer = styled.div`
   width: 100%;
