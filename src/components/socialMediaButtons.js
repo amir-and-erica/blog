@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {EmailIcon, FbIcon, TwitterIcon} from './icons'
 import Color from '../layouts/colors'
@@ -42,11 +43,11 @@ const Label = styled.h4`
   margin-right: 10px;
 `
 
-const SocialMediaButtons = () => {
-
-	const twitterUrl = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbythebay.cool%2Felection%2F&text=SF+and+CA+voted+on+some+rad+races+and+propositions.+Check+out+@bythebaydotcool’s+election+result";
-	const facebookUrl = "https://www.facebook.com/dialog/share?app_id=1134187086655814&display=popup&href=https%3A%2F%2Fbythebay.cool%2Felection%2F";
-	const emailUrl = "mailto:?subject=voter guide&body=Check out this nonpartisan voter guide https://bythebay.cool/";
+const SocialMediaButtons = (props) => {
+  const {title, description, url} = props;
+	const twitterUrl = `https://twitter.com/intent/tweet?url=${url}&text=${description}`;
+	const facebookUrl = `https://www.facebook.com/dialog/share?app_id=1134187086655814&display=popup&href=${url}`;
+	const emailUrl = `mailto:?subject=${title}&body=${description} ${url}`;
 
 	return(
     <Center>
@@ -68,6 +69,12 @@ const Icon = (props) => {
   		<Contain>{props.img}</Contain>
   	</IconContainer>
 	);
+}
+
+SocialMediaButtons.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 export default SocialMediaButtons;

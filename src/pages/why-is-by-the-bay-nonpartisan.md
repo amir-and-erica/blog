@@ -10,7 +10,7 @@ smDescription: >-
 color: orange
 date: '2018-07-16T11:35:51-07:00'
 description: >-
-  People ask us "Why did you launch a nonpartisan local media company when it'd
+  People ask us, "Why did you launch a nonpartisan local media company when it'd
   be easier to pick a side?" The answer is simple: we're radical optimists.
 tags:
   - nonpartisan

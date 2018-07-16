@@ -125,8 +125,9 @@ export class BlogPostTemplate extends React.Component {
           <Line color={color}/>
         </div>
         <SocialMediaButtons
-          title=""
-          description=""
+          title={SocialTitle}
+          description={SocialDescription}
+          url={`https://blog.bythebay.cool/${slug}`}
         />
       </div>
     )
