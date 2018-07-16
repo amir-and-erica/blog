@@ -8,8 +8,9 @@ import IndexPagePost from '../components/IndexPagePost'
 import {Spacer} from '../layouts/util'
 import Head from '../layouts/head'
 
-const PostInfoContainer = styled.div`
+const PostMetaTextContainer = styled.div`
   margin-right: 20px;
+  width:60%;
 `
 
 const Line = styled.div`
@@ -25,12 +26,31 @@ const PostTitle = styled.h2`
   color: #323232;
   text-align: right;
   margin: 0;
+
   @media not all and (hover: none) {
     &:hover {
       text-decoration: underline;
+      text-decoration-color: ${props=>props.color?Color(props.color):'#333'};
     }
   }
 `;
+
+const MetaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`
+
+const PostImageContainer = styled.div`
+  width: 80%;
+`
+const PostImage = styled.img`
+  object-fit: cover;
+  width: calc(100% - 20px);
+  max-height: 66px;
+  border-radius: 2px;
+  margin-right: 20px;
+`
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -39,6 +59,13 @@ const KeepReading = styled(Link)`
   text-align: right;
   margin-top: 10px;
   text-decoration: none;
+  color: #333;
+  @media not all and (hover: none) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: ${props=>props.color?Color(props.color):'#333'};
+    }
+  }
 `
 const Author = styled.h4`
   color: #999;
@@ -51,6 +78,7 @@ const Date = styled.h4`
   margin-top: 5px;
   margin-bottom: 15px;
   text-align: right;
+  margin-right: 20px;
 `
 const BlogTitle = styled.div`
   display: flex;
@@ -68,53 +96,62 @@ const BlogName = styled.h1`
   letter-spacing: -4px;
 `
 const Excerpt = styled.div`
-  margin-top: 22px;
+  margin-top: 15px;
   margin-bottom: 20px;
 `
 
 
 class IndexPage extends React.Component {
-
+  // <PostImageContainer>
+  //   <PostImage src={image} alt=""/>
+  // </PostImageContainer>
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const allPosts = posts.map(({ node: post }) => (
-      <IndexPagePost key={post.id}>
-        <Row>
-          <Col
-            xsOffset={1} xs={10}
-            smOffset={2} sm={8}
-            mdOffset={2} md={3}
-            lgOffset={2} lg={3}
-          >
-            <PostInfoContainer>
-              <Date>{post.frontmatter.date}</Date>
-              <PostLink to={post.fields.slug}>
-                <PostTitle>
-                  {post.frontmatter.title}
-                </PostTitle>
-              </PostLink>
-              <Author>By {post.frontmatter.author}</Author>
-            </PostInfoContainer>
-          </Col>
+    const allPosts = posts.map(({ node: post }) => {
+      const {color, image, date, title, author} = post.frontmatter;
+      return(
+        <IndexPagePost key={post.id}>
+          <Row>
+            <Col
+              xsOffset={1} xs={10}
+              smOffset={2} sm={8}
+              mdOffset={0} md={5}
+              lgOffset={0} lg={5}
+            >
+              <MetaContainer>
+                <Date>{date}</Date>
 
-          <Col
-            xsOffset={1} xs={10}
-            smOffset={2} sm={8}
-            mdOffset={0} md={5}
-            lgOffset={0} lg={5}
-          >
-            <Line color={post.frontmatter.color}/>
-            <Excerpt>{post.excerpt}</Excerpt>
-            <KeepReading to={post.fields.slug}>
-              <h3>Keep Reading →</h3>
-            </KeepReading>
-            <Spacer height={10}/>
-          </Col>
-        </Row>
+                <PostMetaTextContainer>
+                  <PostLink to={post.fields.slug}>
+                    <PostTitle color={color}>
+                      {title}
+                    </PostTitle>
+                  </PostLink>
+                  <Author>By {author}</Author>
+                </PostMetaTextContainer>
+              </MetaContainer>
+            </Col>
 
-      </IndexPagePost>
-    ));
+            <Col
+              xsOffset={1} xs={10}
+              smOffset={2} sm={8}
+              mdOffset={0} md={5}
+              lgOffset={0} lg={5}
+            >
+              <Line color={color}/>
+              <Excerpt>{post.excerpt}</Excerpt>
+              <KeepReading to={post.fields.slug} color={color}>
+                <h3>Keep Reading →</h3>
+              </KeepReading>
+              <Spacer height={10}/>
+            </Col>
+          </Row>
+
+        </IndexPagePost>
+      )
+    }
+  );
 
     return (
       <div>
@@ -147,7 +184,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 300)
           id
           fields {
             slug
@@ -157,6 +194,7 @@ export const pageQuery = graphql`
             author
             templateKey
             color
+            image
             date(formatString: "MMMM DD, YYYY")
           }
         }

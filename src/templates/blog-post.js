@@ -31,6 +31,7 @@ const Attribution = styled.div`
   border-top: 4px solid ${props=>props.color?Color(props.color):Color('pink')};
   @media screen and (max-width: 767px) {
     margin-top: 0;
+    width: 100%;
   }
 `
 
@@ -93,8 +94,8 @@ export class BlogPostTemplate extends React.Component {
         />
         <Row>
           <Col
-            xsOffset={1} xs={10}
-            smOffset={2} sm={8}
+            xsOffset={0} xs={12}
+            smOffset={1} sm={10}
             mdOffset={1} md={6}
             lgOffset={1} lg={6}
           >
@@ -103,8 +104,8 @@ export class BlogPostTemplate extends React.Component {
             <Subtitle>{description}</Subtitle>
           </Col>
           <Col
-            xsOffset={1} xs={10}
-            smOffset={2} sm={8}
+            xsOffset={0} xs={12}
+            smOffset={1} sm={10}
             mdOffset={1} md={4}
             lgOffset={1} lg={4}
           >
