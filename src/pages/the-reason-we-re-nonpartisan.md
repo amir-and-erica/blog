@@ -3,6 +3,9 @@ templateKey: blog-post
 title: The reason we're nonpartisan
 author: Yvonne Leow
 image: /img/products-grid3.jpg
+smTitle: test title
+smDescription: test description
+color: purple
 date: '2018-07-13T17:06:57-07:00'
 description: How we define it and why we think it's more important than ever
 tags:

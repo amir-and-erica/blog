@@ -4,8 +4,8 @@ title: New post with new config file
 author: Jimmy Chion
 image: /img/products-grid3.jpg
 smTitle: Social Media Title test
-color: light blue
 smDescription: social media description test
+color: light blue
 date: '2018-07-16T13:26:40-07:00'
 description: this is a description
 tags:

@@ -70,7 +70,8 @@ export class BlogPostTemplate extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({topOffset: document.querySelector('h1').getBoundingClientRect().x});
+    // this.setState({topOffset: document.querySelector('h1').getBoundingClientRect().x});
+
     // TODO: add line to h2
     // console.log(document.getElementsByTagName('h2'))
     // document.querySelector('h2').insertAdjacentHTML('afterend','<span>hello</span>')
