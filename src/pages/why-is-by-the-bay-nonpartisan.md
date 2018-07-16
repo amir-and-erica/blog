@@ -3,14 +3,15 @@ templateKey: blog-post
 title: Why is By The Bay nonpartisan?
 author: Yvonne Leow
 image: /img/products-grid3.jpg
-smTitle: test title
-smDescription: test description
+smTitle: Why is By The Bay nonpartisan?
+smDescription: >-
+  People ask us "Why did you launch a nonpartisan local media company when it'd
+  be easier to pick a side?" Here's our answer.
 color: orange
 date: '2018-07-16T11:35:51-07:00'
 description: >-
-  People have asked us "Why did you launch a nonpartisan local media company
-  when it'd be easier to pick a side?" The answer is simple: we're radical
-  optimists.
+  People ask us "Why did you launch a nonpartisan local media company when it'd
+  be easier to pick a side?" The answer is simple: we're radical optimists.
 tags:
   - nonpartisan
   - journalism
