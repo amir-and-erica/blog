@@ -20,19 +20,19 @@ tags:
 
 "Nonpartisan" has become a controversial and confusing term in journalism. The word is often blurred with "[objectivity" and "impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/)," and many people say it isn't possible to be truly nonpartisan. At By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives."
 
-Sure, we know not all opinions are equal (i.e. I believe in aliens vs. I believe in gravity), and we don't aspire to describe every single point of view that ever existed, but our goal isn't to provide answers. When it comes to local politics, we want to provide context and understanding.
+We know not all opinions are equal (i.e. I believe in aliens vs. I believe in gravity). We don't aspire to describe every single point of view that ever existed. Our goal isn't to influence your vote or even to provide answers! When it comes to local politics, our mission, our hope, is to provide context and understanding.
 
-## So, your nonpartisan with a point of view?
+## Your nonpartisan with a point of view?
 
-It's true, we have a perspective. Jimmy and I live in SF. We've been covering CA and SF politics for the past year (not the past decade). We share a dry, occasionally cheesy sense of humor and we're not afraid to express our personality in our work.
+Yea, deff, we have a perspective.  For instance, Jimmy and I live in SF (not NYC). We've been covering CA and SF politics for the past year (not the past decade). We share a dry, occasionally cheesy sense of humor and generally we're not afraid to express our personality in our work.
 
-That being said, there's a difference between describing the world through a singular perspective and striving to represent other perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can accurately explain them.
+That being said, there's a difference between explaining the world through a singular perspective and striving to represent other perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can accurately share them with you.
 
 ## What does optimism have to do with it?
 
-The 2016 US Presidential election left me speechless. I had not anticipated or understood the results. "How did I not see this coming?" I asked myself, "Why am I so shocked?" It became one of the many existential cracks in my social media echo chamber, and for months I became disenchanted by national news coverage and disempowered by the political process.  
+The 2016 US Presidential election left me speechless. It sounds naive, but I had not anticipated the results. "How did I not see this coming?" I asked myself, "Why am I so shocked?" It became one of the many existential cracks in my social media echo chamber, and for months I became disenchanted by national news coverage and disempowered by the political process.  
 
-Since then, I've come to realize that being nonpartisan isn't neutral. Rather, it's brimming with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be a responsible citizen. With fair and accurate reporting, we hope no one will be caught off guard by life-changing election results (like me).   
+Since then, I've come to realize that being nonpartisan isn't neutral. Rather, it's brimming with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be responsible citizens. With fair and accurate journalism, we hope no one will be caught off guard by life-changing election results (like me).   
 
 At By The Bay, we recognize the pursuit of truth is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, shhh, we don't know much. Our goal is to learn. And if we do our jobs: researching, writing, creating beautiful local voter guides, it'll be easier for you to learn with us too.
 
