@@ -8,8 +8,9 @@ smDescription: test description
 color: orange
 date: '2018-07-16T11:35:51-07:00'
 description: >-
-  People have asked us "Why did you launch a nonpartisan local media company in
-  an era of political polarization?" The answer is simple: we're optimists.
+  People have asked us "Why did you launch a nonpartisan local media company
+  when it'd be easier to pick a side?" The answer is simple: we're radical
+  optimists.
 tags:
   - nonpartisan
   - journalism
@@ -17,7 +18,7 @@ tags:
 ---
 ## What does 'nonpartisan' mean?
 
-"Nonpartisan" has become a controversial, confusing term in journalism. The word is often blurred with "[objectivity" and "impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/)," and many people say it isn't possible to be truly nonpartisan, everyone has a point of view. At By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives."
+"Nonpartisan" has become a controversial and confusing term in journalism. The word is often blurred with "[objectivity" and "impartiality](http://pressthink.org/2010/11/the-view-from-nowhere-questions-and-answers/)," and many people say it isn't possible to be truly nonpartisan. At By The Bay, we define nonpartisan as "attempting to accurately and fairly represent a multitude of perspectives."
 
 Sure, we know not all opinions are equal (i.e. I believe in aliens vs. I believe in gravity), and we don't aspire to describe every single point of view that ever existed, but our goal isn't to provide answers. When it comes to local politics, we want to provide context and understanding.
 
