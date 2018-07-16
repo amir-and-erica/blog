@@ -18,8 +18,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Front Image", name: "image", widget: "image", required: "false"}
-      - {label: "Social Media title", name:"smTitle", widget:"text" required: "false"}
-      - {label: "Color", name:"color", widget:"select", options: ["pink", "purple", "light blue", "dark blue", "yellow", "tan", "orange"], default: "pink"}
+      - {label: "Social Media title", name: "smTitle", widget: "text" required: "false"}
+      - {label: "Color", name: "color", widget: "select", options: ["pink", "purple", "light blue", "dark blue", "yellow", "tan", "orange"], default: "pink"}
       - {label: "Social Media description", name:"smDescription", widget:"text" required: "false"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
