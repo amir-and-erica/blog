@@ -10,6 +10,7 @@ import Line from '../components/rounded-line'
 import TagsSection from '../components/TagsSection'
 import '../layouts/template-styles/blog-post-style-1.css'
 import Color from '../layouts/colors'
+import SocialMediaButtons from '../components/socialMediaButtons'
 
 const Title = styled.h1`
   text-align: left;
@@ -114,14 +115,19 @@ export class BlogPostTemplate extends React.Component {
               <Author>By {author}</Author>
               <Date>{date}</Date>
             </Attribution>
+
           </Col>
         </Row>
         <div className="blog-post-body">
           <Spacer height={30}/>
           <PostContent content={content} />
           <Spacer height={30}/>
-          <TagsSection data={tags}/>
+          <Line color={color}/>
         </div>
+        <SocialMediaButtons
+          title=""
+          description=""
+        />
       </div>
     )
   }

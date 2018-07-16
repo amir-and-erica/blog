@@ -11,6 +11,7 @@ const Container = styled.div`
 export const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `
 
 const TagsTitle = styled.h4`
