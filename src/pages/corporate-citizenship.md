@@ -7,7 +7,9 @@ smTitle: eDdadsf
 smDescription: asdfasdfasd
 color: pink
 date: '2018-07-16T15:00:30-07:00'
-description: 'There''s a cool trend happening in SF and beyond. No, it''s not boba tea. '
+description: >-
+  There's a cool trend happening in SF and beyond. No trust me, it's not boba
+  tea. 
 tags:
   - Corporate citizenship
   - Politics
