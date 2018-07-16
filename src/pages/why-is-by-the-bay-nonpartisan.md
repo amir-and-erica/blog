@@ -23,9 +23,9 @@ tags:
 
 We know not all opinions are equal (i.e. I believe in aliens vs. I believe in gravity). We don't aspire to describe every single point of view that ever existed. Our goal isn't to influence your vote or even to provide answers! When it comes to local politics, our mission, our hope, is to provide context and understanding.
 
-## Your nonpartisan with a point of view?
+## You're nonpartisan with a point of view?
 
-Yea, deff, we have a perspective.  For instance, Jimmy and I live in SF (not NYC). We've been covering CA and SF politics for the past year (not the past decade). We share a dry, occasionally cheesy sense of humor and generally we're not afraid to express our personality in our work.
+Yea, def, we have a perspective.  For instance, Jimmy and I live in SF (not NYC). We've been covering CA and SF politics for the past year (not the past decade). We share a dry, occasionally cheesy sense of humor and generally we're not afraid to express our personality in our work.
 
 That being said, there's a difference between explaining the world through a singular perspective and striving to represent other perspectives. We're committed to the latter. Jimmy and I spend countless hours researching opposing arguments and opposing-opposing arguments so we can accurately share them with you.
 
@@ -35,6 +35,4 @@ The 2016 US Presidential election left me speechless. It sounds naive, but I had
 
 Since then, I've come to realize that being nonpartisan isn't neutral. Rather, it's brimming with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be responsible citizens. With fair and accurate journalism, we hope no one will be caught off guard by life-changing election results (like me).   
 
-At By The Bay, we recognize the pursuit of truth is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, shhh, we don't know much. Our goal is to learn. And if we do our jobs: researching, writing, creating beautiful local voter guides, it'll be easier for you to learn with us too.
-
-We hope you will.
+At By The Bay, we recognize the pursuit of truth is never-ending. We relentlessly challenge and investigate what we _think_ we know because, honestly, we don't know everything nor do we think of ourselves as experts (shhh). Our goal is to learn. And if we do our jobs: researching, writing, creating beautiful local voter guides, it'll be easier for you to learn with us too.
