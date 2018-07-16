@@ -31,7 +31,7 @@ That being said, there's a difference between explaining the world through a sin
 
 ## What does optimism have to do with it?
 
-The 2016 US Presidential election left me speechless. It sounds naive, but I had not anticipated the results. "How did I not see this coming?" I asked myself, "Why am I so shocked?" It became one of the many existential cracks in my social media echo chamber, and for months I became disenchanted by national news coverage and disempowered by the political process.  
+The 2016 US presidential election left me speechless. It sounds naive, but I had not anticipated the results. "How did I not see this coming?" I asked myself, "Why am I so shocked?" It became one of the many existential cracks in my social media echo chamber, and for months I became disenchanted by national news coverage and disempowered by the political process.  
 
 Since then, I've come to realize that being nonpartisan isn't neutral. Rather, it's brimming with optimism. We believe explaining complex, often contradictory sides to important issues inspires people to act, vote, and be responsible citizens. With fair and accurate journalism, we hope no one will be caught off guard by life-changing election results (like me).   
 
