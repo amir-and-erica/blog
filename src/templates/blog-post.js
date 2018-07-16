@@ -28,7 +28,7 @@ const Date = styled.h4`
 `
 const Attribution = styled.div`
   margin-top: ${props=>props.offset}px;
-  border-top: 4px solid ${Color('pink')};
+  border-top: 4px solid ${props=>props.color?Color(props.color):Color('pink')};
   @media screen and (max-width: 767px) {
     margin-top: 0;
   }
@@ -79,15 +79,17 @@ export class BlogPostTemplate extends React.Component {
 
   render() {
     const { content, contentComponent, frontmatter, slug} = this.props;
-    const  { description, tags, title, date, author} = frontmatter;
+    const  { description, tags, title, date, author, color, smTitle, smDescription} = frontmatter;
     const PostContent = contentComponent || Content;
+    const SocialTitle = smTitle || title;
+    const SocialDescription = smDescription || description;
     return (
       <div>
         <Head
           url={`https://blog.bythebay.cool/${slug}`}
-          title={`${title} – By The Way`}
-          headline={title || "By The Way blog post"}
-          description={description || "Yes of course it's something interesting."}
+          title={`${SocialTitle} – By The Way`}
+          headline={SocialTitle || "By The Way blog post"}
+          description={SocialDescription || "Yes of course it's something interesting."}
         />
         <Row>
           <Col
@@ -106,7 +108,7 @@ export class BlogPostTemplate extends React.Component {
             mdOffset={1} md={4}
             lgOffset={1} lg={4}
           >
-            <Attribution offset={this.state.topOffset}>
+            <Attribution color={color} offset={this.state.topOffset}>
               <Spacer height={25}/>
               <Author>By {author}</Author>
               <Date>{date}</Date>
@@ -144,6 +146,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        color
+        smTitle
+        smDescription
         tags
       }
     }

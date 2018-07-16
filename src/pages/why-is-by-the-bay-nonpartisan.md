@@ -5,7 +5,7 @@ author: Yvonne Leow
 image: /img/products-grid3.jpg
 smTitle: test title
 smDescription: test description
-color: purple
+color: orange
 date: '2018-07-16T11:35:51-07:00'
 description: >-
   People have asked us "Why did you launch a nonpartisan local media company in

@@ -17,7 +17,7 @@ const Line = styled.div`
   height: 4px;
   border-radius: 2px;
   width: 100%;
-  background-color: ${Color('pink')}
+  background-color: ${props=>props.color?Color(props.color):Color('pink')};
 `
 
 const PostTitle = styled.h2`
@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
             mdOffset={0} md={5}
             lgOffset={0} lg={5}
           >
-            <Line/>
+            <Line color={post.frontmatter.color}/>
             <Excerpt>{post.excerpt}</Excerpt>
             <KeepReading to={post.fields.slug}>
               <h3>Keep Reading →</h3>
@@ -156,6 +156,7 @@ export const pageQuery = graphql`
             title
             author
             templateKey
+            color
             date(formatString: "MMMM DD, YYYY")
           }
         }
