@@ -6,13 +6,13 @@ const ReturnLink = styled.a`
   text-decoration: none;
   color: white;
   padding: 3px 20px;
-  background-color: ${Color('blue')};
+  background: linear-gradient(45deg,${Color('darkpurple')},${Color('blue')})};
   display: block;
   border-radius: 2px;
   @media not all and (hover: none) {
 		&:hover {
       color: white;
-      background-color: ${Color('blue',0,-10)};
+      background: linear-gradient(45deg,${Color('darkpurple', 0, 10)},${Color('blue', 0, 10)});
     }
   }
 `

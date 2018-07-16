@@ -8,7 +8,7 @@ import Acronym from '../components/acronym'
 const FooterWrapper = styled(Row)`
 	display: flex;
 	background-color: navy;
-	background:linear-gradient(45deg,darkslateblue,navy);
+	background:linear-gradient(45deg,${Color('darkpurple')},${Color('blue')});
 	padding-top: 70px;
 	padding-bottom: 70px;
   @media print {
