@@ -27,9 +27,9 @@ const Author = styled.h4`
 const Date = styled.h4`
   color: #999;
 `
+
 const Attribution = styled.div`
   margin-top: ${props=>props.offset}px;
-  border-top: 4px solid ${props=>props.color?Color(props.color):Color('pink')};
   @media screen and (max-width: 767px) {
     margin-top: 0;
     width: 100%;
@@ -69,7 +69,7 @@ const Content = ({ content }) => (
 export class BlogPostTemplate extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { topOffset: 113 }
+    this.state = { topOffset: 108 }
   }
 
   componentDidMount() {
@@ -111,7 +111,8 @@ export class BlogPostTemplate extends React.Component {
             mdOffset={1} md={4}
             lgOffset={1} lg={4}
           >
-            <Attribution color={color} offset={this.state.topOffset}>
+            <Attribution offset={this.state.topOffset}>
+              <Line color={Color(color)}/>
               <Spacer height={25}/>
               <Author>By {author}</Author>
               <Date>{date}</Date>
