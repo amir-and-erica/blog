@@ -6,7 +6,7 @@ image: /img/jimmy1.jpeg
 smTitle: Can community conversations solve San Francisco’s housing crisis?
 smDescription: 'An evening of food + realtalk about homelessness in SF. '
 color: pink
-date: '2018-07-17T11:03:50-07:00'
+date: '2018-03-25T11:03:50-07:00'
 description: 'An evening of food + realtalk about homelessness in our city. '
 tags:
   - Homelessness
@@ -14,7 +14,7 @@ tags:
   - Community
   - Shelter Tech
 ---
-On a drizzly Tuesday evening, Jimmy Chion and I huddled up with more than a dozen residents to talk about one of the most important issues in the Bay Area: housing. Thanks to Renaissance Journalism, we had an opportunity to host our first On The Table meal in March. We were curious to see how our dinner would go.
+On a drizzly Tuesday evening, Jimmy Chion and I huddled up with more than a dozen residents to talk about one of the most important issues in the Bay Area: housing. Thanks to Renaissance Journalism, we had an opportunity to host our first [On The Table meal](https://renjournalism.org/bay-area-media-collaborative/host-table-event-2018/) in March. We were curious to see how our dinner would go.
 
 Housing affordability, especially in San Francisco, is an emotionally-charged issue. Fissures naturally form in any conversation: How can this place be home if locals can’t afford to live in the city? Who deserves to live in SF? Is building enough housing for everyone a liberal dream or an addressable crisis?
 
@@ -38,4 +38,4 @@ For a brief evening, we sat next to strangers and shared our greatest fears. We 
 
 And for us, that was enough.
 
-_Thanks to Shelter Tech for co-hosting By The Bay’s first On The Table event, and Renaissance Journalism for sponsoring our meal. Learn more about our work at By The Bay._
+_Thanks to _[_Shelter Tech_](https://www.sheltertech.org/)_ for co-hosting By The Bay’s first On The Table event, and Renaissance Journalism for sponsoring our meal. Learn more about our work at By The Bay. This post was originally published on _[_Medium_](https://medium.com/bythebaydotcool/can-community-conversations-help-solve-sfs-housing-crisis-b7f86e44785c)_._
