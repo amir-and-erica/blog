@@ -32,11 +32,9 @@ If the only way to make SF a more affordable place to live is by making it as de
 
 When it comes to a heated topic like housing, we realized people had a tendency to launch into passionate diatribes. The question jar helped guide our group’s discussion. It also gave everyone a way to share their own questions and concerns:
 
-What does it mean to be rich?
-
-Would you consider living next to a homeless shelter? Why or why not?
-
-How can I make a difference?
+* What does it mean to be rich?
+* Would you consider living next to a homeless shelter? Why or why not?
+* How can I make a difference?
 
 Two hours whipped by as we shared our personal stories. We went down a couple of rabbit holes about the role of capitalism and whether it was even possible to solve the housing crisis. (Our conclusion: Probably not, but we should keep trying). We parted ways without developing a grand plan for addressing housing affordability in SF, but of course that was never the point.
 
