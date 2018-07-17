@@ -12,6 +12,16 @@ import '../layouts/template-styles/blog-post-style-1.css'
 import Color from '../layouts/colors'
 import SocialMediaButtons from '../components/socialMediaButtons'
 import RelatedPosts from '../components/RelatedPostsSection'
+
+const FrontImage = styled.img`
+  max-height: 200px;
+  width: 100%;
+  margin-top: 15px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  box-shadow: 0 2px 10px #eee;
+`
+
 const Title = styled.h1`
   text-align: left;
   margin-bottom: 5px;
@@ -82,7 +92,7 @@ export class BlogPostTemplate extends React.Component {
 
   render() {
     const { content, contentComponent, frontmatter, slug, related} = this.props;
-    const  { description, tags, title, date, author, color, smTitle, smDescription} = frontmatter;
+    const  { description, tags, title, date, author, color, smTitle, smDescription, image} = frontmatter;
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
@@ -121,6 +131,7 @@ export class BlogPostTemplate extends React.Component {
           </Col>
         </Row>
         <div className="blog-post-body">
+          {image && <FrontImage src={image}/>}
           <Spacer height={30}/>
           <PostContent content={content} />
           <Spacer height={30}/>
@@ -161,6 +172,7 @@ export const pageQuery = graphql`
         smTitle
         smDescription
         tags
+        image
       }
     }
 
