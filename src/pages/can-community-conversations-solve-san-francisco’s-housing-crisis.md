@@ -24,11 +24,9 @@ Housing affordability, especially in San Francisco, is an emotionally-charged is
 
 The perspectives around the dinner table ranged from diehard YIMBY’s (Yes In My Backyard), native NIMBYs (Not In My Backyard), homeless residents living in the Tenderloin, guilt-ridden tech professionals, a Libertarian, and a couple of journalists who were eager to hear everyone’s stories. We printed a dozen questions and placed them in a jar. Every once in awhile, someone would pick a question and reset the conversation:
 
-When was the last time you felt proud to live in this city?
-
-How do you think the success of the tech industry has helped the city?
-
-Would you be willing to pay 30% of your annual salary in taxes to make SF more affordable to others?
+* When was the last time you felt proud to live in this city?
+* How do you think the success of the tech industry has helped the city?
+* Would you be willing to pay 30% of your annual salary in taxes to make SF more affordable to others?
 
 If the only way to make SF a more affordable place to live is by making it as dense as Tokyo, should we make that happen? Why or why not?
 
