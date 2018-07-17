@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Can community conversations solve San Francisco’s housing crisis?
-author: Yvonne
+author: Yvonne Leow
 image: /img/jimmy1.jpeg
 smTitle: Can community conversations solve San Francisco’s housing crisis?
 smDescription: 'An evening of food + realtalk about homelessness in SF. '
