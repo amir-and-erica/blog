@@ -4,9 +4,7 @@ title: Can community conversations solve San Francisco’s housing crisis?
 author: Yvonne
 image: /img/jimmy1.jpeg
 smTitle: Can community conversations solve San Francisco’s housing crisis?
-smDescription: >-
-  What we learned from an evening of food and realtalk about homelessness in
-  SF. 
+smDescription: 'An evening of food + realtalk about homelessness in SF. '
 color: pink
 date: '2018-07-17T11:03:50-07:00'
 description: >-
