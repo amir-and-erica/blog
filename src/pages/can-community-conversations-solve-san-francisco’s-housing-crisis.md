@@ -13,6 +13,7 @@ tags:
   - Conversations
   - Community
   - Shelter Tech
+  - events
 ---
 On a drizzly Tuesday evening, Jimmy Chion and I huddled up with more than a dozen residents to talk about one of the most important issues in the Bay Area: housing. Thanks to Renaissance Journalism, we had an opportunity to host our first [On The Table meal](https://renjournalism.org/bay-area-media-collaborative/host-table-event-2018/) in March. We were curious to see how our dinner would go.
 
