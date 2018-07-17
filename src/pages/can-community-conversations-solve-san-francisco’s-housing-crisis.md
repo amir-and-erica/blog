@@ -7,7 +7,7 @@ smTitle: Can community conversations solve San Francisco’s housing crisis?
 smDescription: 'An evening of food + realtalk about homelessness in SF. '
 color: pink
 date: '2018-07-17T11:03:50-07:00'
-description: 'An evening of food + realtalk about homelessness in SF. '
+description: 'An evening of food + realtalk about homelessness in our city. '
 tags:
   - Homelessness
   - Conversations
