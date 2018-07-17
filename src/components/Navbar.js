@@ -100,7 +100,8 @@ class Navbar extends React.Component {
 
 const navLinks = [
   { label:"Posts", to: "/"},
-  { label:"Tags", to: "/tags/"},
+  // { label:"About", to: "/about"}
+  // { label:"Tags", to: "/tags/"},
 ]
 
 export default Navbar

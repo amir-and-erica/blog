@@ -96,7 +96,7 @@ const BlogName = styled.h1`
   letter-spacing: -4px;
 `
 const Excerpt = styled.div`
-  margin-top: 15px;
+  margin-top: 19px;
   margin-bottom: 20px;
 `
 

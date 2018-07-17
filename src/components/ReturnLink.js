@@ -23,6 +23,7 @@ const Position = styled.div`
   left: -86px;
   transform: rotate(90deg);
   z-index: 2;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
   @media screen and (max-width: 767px) {
     display: none;
   }

@@ -11,7 +11,7 @@ import TagsSection from '../components/TagsSection'
 import '../layouts/template-styles/blog-post-style-1.css'
 import Color from '../layouts/colors'
 import SocialMediaButtons from '../components/socialMediaButtons'
-
+import RelatedPosts from '../components/RelatedPostsSection'
 const Title = styled.h1`
   text-align: left;
   margin-bottom: 5px;
@@ -38,13 +38,14 @@ const Attribution = styled.div`
 
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { relatedPosts, blogPostData: post } = data;
   return (
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         frontmatter={post.frontmatter}
         slug={post.fields.slug}
+        related={relatedPosts.edges}
       />
   )
 }
@@ -80,7 +81,7 @@ export class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    const { content, contentComponent, frontmatter, slug} = this.props;
+    const { content, contentComponent, frontmatter, slug, related} = this.props;
     const  { description, tags, title, date, author, color, smTitle, smDescription} = frontmatter;
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
@@ -122,13 +123,14 @@ export class BlogPostTemplate extends React.Component {
           <Spacer height={30}/>
           <PostContent content={content} />
           <Spacer height={30}/>
-          <Line color={color}/>
+          <Line color={Color(color)}/>
         </div>
         <SocialMediaButtons
           title={SocialTitle}
           description={SocialDescription}
           url={`https://blog.bythebay.cool/${slug}`}
         />
+        <RelatedPosts posts={related}/>
       </div>
     )
   }
@@ -143,7 +145,7 @@ BlogPostTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    blogPostData: markdownRemark(id: { eq: $id }) {
       id
       html
       fields {
@@ -158,6 +160,25 @@ export const pageQuery = graphql`
         smTitle
         smDescription
         tags
+      }
+    }
+
+    relatedPosts: allMarkdownRemark(
+      limit: 3,
+      sort: {fields: [frontmatter___date], order: DESC},
+      filter: {frontmatter: {tags: {eq: "voice"}}}
+    ) {
+      edges {
+        node {
+          frontmatter {
+						title
+            description
+            color
+          }
+					fields {
+            slug
+          }
+        }
       }
     }
   }
