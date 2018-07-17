@@ -1,5 +1,9 @@
 import React from 'react'
 
+export const NavArrow = (props) => (
+	<svg fill={props.color} stroke='none' width="25" height="25" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M69.2 47L36.5 14.3c-1.6-1.6-4-1.6-5.7 0s-1.6 4 0 5.7l30 30-30 30c-1.6 1.6-1.6 4.2 0 5.7.8.8 1.8 1.2 2.8 1.2 1 0 2-.5 3-1.3l32.6-33c1.6-1.6 1.6-4 0-5.7z"/></svg>
+)
+
 export const EmailIcon = (props) => (
 	<svg version="1" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 	  <path d="M16 21c-4 0-8 4-8 8v42c0 4 4 8 8 8h68c4 0 8-4 8-8V29c0-4-4-8-8-8zm0 4h69L52 57h-4L15 25h1zm-4 3l24 23-24 22V28zm76 0v45L64 51zM38 53l8 7c2 3 6 3 8 0l8-7 22 22H16z"/>

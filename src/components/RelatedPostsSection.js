@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {Spacer} from '../layouts/util'
 import Link from 'gatsby-link'
 import Color from '../layouts/colors'
+import {NavArrow} from './icons'
 
 const Container = styled.div`
   display: flex;
@@ -45,30 +46,61 @@ const PostDescription = styled.div`
 const SectionTitle = styled.h2`
   text-align: center;
 `
+const ReturnLink = styled.div`
+  margin-top: 30px;
+  padding: 5px 30px 5px 10px;
+  background-color: darkslateblue;
+  text-align: center;
+  display: inline-block;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+`
+const ArrowContainer = styled.div`
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-right: 10px;
+`
+const ReturnText = styled.h3`
+  color: white;
+  display: inline-block;
+`
 
 const RelatedPostsSection = (props) => {
+  const HeadingText = props.posts.length > 1?"Read some related posts":"Here's one more";
+  const RelatedPosts =
+    props.posts.map((post, i)=>{
+      const {title, description, color} = post.node.frontmatter;
+      return(
+        <StyledLink to={post.node.fields.slug} key={i} >
+          <DropShadow color={color}>
+            <PostContainer>
+              <h3>{title}</h3>
+              <PostDescription>{description}</PostDescription>
+            </PostContainer>
+          </DropShadow>
+        </StyledLink>
+      )
+    })
   return(
-    <div>
-      <SectionTitle>Read some related posts</SectionTitle>
-      <Spacer height={20}/>
-      <Container>
-        {
-          props.posts.map((post, i)=>{
-            const {title, description, color} = post.node.frontmatter;
-            return(
-              <StyledLink to={post.node.fields.slug} key={i} >
-                <DropShadow color={color}>
-                  <PostContainer>
-                    <h3>{title}</h3>
-                    <PostDescription>{description}</PostDescription>
-                  </PostContainer>
-                </DropShadow>
-              </StyledLink>
-            )
-          })
-        }
-      </Container>
-    </div>
+    <React.Fragment>
+      {
+        props.posts.length > 0 && props.posts ?
+          <div>
+            <SectionTitle>{HeadingText}</SectionTitle>
+            <Spacer height={20}/>
+            <Container>
+              {RelatedPosts}
+            </Container>
+            <Link to="/">
+              <ReturnLink>
+                <ArrowContainer><NavArrow color="#fff"/></ArrowContainer>
+                <ReturnText>Return to the front page</ReturnText>
+              </ReturnLink>
+            </Link>
+          </div>
+      : null
+      }
+    </React.Fragment>
   )
 }
 
