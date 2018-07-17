@@ -41,4 +41,4 @@ For a brief evening, we sat next to strangers and shared our greatest fears. We 
 
 And for us, that was enough.
 
-_Thanks to _[_Shelter Tech_](https://www.sheltertech.org/)_ for co-hosting By The Bay’s first On The Table event, and Renaissance Journalism for sponsoring our meal. Learn more about our work at By The Bay. This post was originally published on _[_Medium_](https://medium.com/bythebaydotcool/can-community-conversations-help-solve-sfs-housing-crisis-b7f86e44785c)_._
+_Thanks to [Shelter Tech](https://www.sheltertech.org/) for co-hosting By The Bay’s first On The Table event, and Renaissance Journalism for sponsoring our meal. Learn more about our work at By The Bay. This post was originally published on [Medium](https://medium.com/bythebaydotcool/can-community-conversations-help-solve-sfs-housing-crisis-b7f86e44785c)_.
