@@ -59,9 +59,11 @@ const ListItem = styled.li`
 	margin: 0;
 	list-style: none;
 `;
-const FinePrint = styled.div`
+const FinePrint = styled.h5`
+	font-weight: normal;
 	margin-bottom: 35px;
-	font-size: 13px;
+	font-size: 14px;
+
 	line-height: 18px;
 	color: white;
 `;

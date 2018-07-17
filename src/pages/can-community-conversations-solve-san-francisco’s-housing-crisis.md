@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Can community conversations solve San Francisco’s housing crisis?
 author: Yvonne Leow
-image: /img/jimmy1.jpeg
+image: /img/onthetable-1.jpg
 smTitle: Can community conversations solve San Francisco’s housing crisis?
 smDescription: 'An evening of food + realtalk about homelessness in SF. '
 color: pink
@@ -33,7 +33,7 @@ When it comes to a heated topic like housing, we realized people had a tendency 
 * Would you consider living next to a homeless shelter? Why or why not?
 * How can I make a difference?
 
-![Residents sharing their experience with homelessness.](/img/jimmy.jpeg)
+![Residents sharing their experience with homelessness.](/img/onthetable-2.jpg)
 
 Two hours whipped by as we shared our personal stories. We went down a couple of rabbit holes about the role of capitalism and whether it was even possible to solve the housing crisis. (Our conclusion: Probably not, but we should keep trying). We parted ways without developing a grand plan for addressing housing affordability in SF, but of course that was never the point.
 
