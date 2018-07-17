@@ -32,6 +32,8 @@ When it comes to a heated topic like housing, we realized people had a tendency 
 * Would you consider living next to a homeless shelter? Why or why not?
 * How can I make a difference?
 
+![](/img/jimmy.jpeg)
+
 Two hours whipped by as we shared our personal stories. We went down a couple of rabbit holes about the role of capitalism and whether it was even possible to solve the housing crisis. (Our conclusion: Probably not, but we should keep trying). We parted ways without developing a grand plan for addressing housing affordability in SF, but of course that was never the point.
 
 For a brief evening, we sat next to strangers and shared our greatest fears. We talked about our families, our failures, our livelihoods, our future. Despite our divergent backgrounds and experiences, everyone took the first step of showing up, even for a meal. We articulated our opinions knowing that the goal wasn’t to win an argument, but to listen. We reminded ourselves that housing affordability was ours to tackle, not theirs.
