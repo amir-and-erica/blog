@@ -37,8 +37,8 @@ const Attribution = styled.div`
 `
 
 
-const BlogPost = ({ data }) => {
-  const { relatedPosts, blogPostData: post } = data;
+const BlogPost = (props) => {
+  const { relatedPosts, blogPostData: post } = props.data;
   return (
       <BlogPostTemplate
         content={post.html}
@@ -144,7 +144,7 @@ BlogPostTemplate.propTypes = {
 
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query BlogPostByID($id: String!, $tags: [String!]!) {
     blogPostData: markdownRemark(id: { eq: $id }) {
       id
       html
@@ -166,7 +166,7 @@ export const pageQuery = graphql`
     relatedPosts: allMarkdownRemark(
       limit: 3,
       sort: {fields: [frontmatter___date], order: DESC},
-      filter: {frontmatter: {tags: {eq: "voice"}}}
+      filter: {frontmatter: {tags: {in: $tags}}}
     ) {
       edges {
         node {

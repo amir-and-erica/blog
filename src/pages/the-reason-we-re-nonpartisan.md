@@ -10,7 +10,6 @@ date: '2018-07-13T17:06:57-07:00'
 description: How we define it and why we think it's more important than ever
 tags:
   - nytimes
-  - voice
 ---
 WASHINGTON — The special counsel investigating Russian interference in the 2016 election indicted 12 Russian intelligence officers on Friday in the hacking of the Democratic National Committee and the Clinton presidential campaign. The indictment came just three days before President Trump is planning to meet with President Vladimir V. Putin of Russia in Helsinki, Finland.
 

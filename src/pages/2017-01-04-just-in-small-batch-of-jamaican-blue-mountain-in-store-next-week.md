@@ -15,7 +15,6 @@ tags:
   - green beans
   - flavor
   - tasting
-  - voice
 ---
 ![chemex](/img/products-grid3.jpg)
 

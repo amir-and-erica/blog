@@ -56,15 +56,14 @@ const RelatedPostsSection = (props) => {
           props.posts.map((post, i)=>{
             const {title, description, color} = post.node.frontmatter;
             return(
-              <StyledLink to={post.node.fields.slug}>
+              <StyledLink to={post.node.fields.slug} key={i} >
                 <DropShadow color={color}>
-                  <PostContainer key={i} >
+                  <PostContainer>
                     <h3>{title}</h3>
                     <PostDescription>{description}</PostDescription>
                   </PostContainer>
                 </DropShadow>
               </StyledLink>
-
             )
           })
         }
