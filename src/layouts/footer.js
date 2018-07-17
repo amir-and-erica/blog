@@ -10,7 +10,7 @@ const FooterWrapper = styled(Row)`
 	background-color: navy;
 	background:linear-gradient(45deg,${Color('darkpurple')},${Color('blue')});
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 45px;
 	box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   @media print {
     display: none;

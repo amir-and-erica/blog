@@ -54,6 +54,7 @@ const ReturnLink = styled.div`
   display: inline-block;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 `
 const ArrowContainer = styled.div`
   display: inline-block;
