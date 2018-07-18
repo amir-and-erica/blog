@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {Spacer} from '../layouts/util'
 import Link from 'gatsby-link'
 import Color from '../layouts/colors'
-import {NavArrow} from './icons'
 
 const Container = styled.div`
   display: flex;
@@ -46,25 +45,7 @@ const PostDescription = styled.div`
 const SectionTitle = styled.h2`
   text-align: center;
 `
-const ReturnLink = styled.div`
-  margin-top: 30px;
-  padding: 5px 30px 5px 10px;
-  background-color: darkslateblue;
-  text-align: center;
-  display: inline-block;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-`
-const ArrowContainer = styled.div`
-  display: inline-block;
-  transform: rotate(180deg);
-  margin-right: 10px;
-`
-const ReturnText = styled.h3`
-  color: white;
-  display: inline-block;
-`
+
 
 const RelatedPostsSection = (props) => {
   const numPosts = props.posts ? props.posts.length : 0
@@ -93,12 +74,7 @@ const RelatedPostsSection = (props) => {
             <Container>
               {RelatedPosts}
             </Container>
-            <Link to="/">
-              <ReturnLink>
-                <ArrowContainer><NavArrow color="#fff"/></ArrowContainer>
-                <ReturnText>Return to the front page</ReturnText>
-              </ReturnLink>
-            </Link>
+
           </div>
       : null
       }

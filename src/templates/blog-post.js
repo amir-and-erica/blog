@@ -10,6 +10,7 @@ import '../layouts/template-styles/blog-post-style-1.css'
 import Color from '../layouts/colors'
 import SocialMediaButtons from '../components/socialMediaButtons'
 import RelatedPosts from '../components/RelatedPostsSection'
+import BottomNavigation from '../components/BottomNavigation'
 import JimmyHead from './images/jimmy.png'
 import YvonneHead from './images/yvonne.png'
 
@@ -58,14 +59,23 @@ const Attribution = styled.div`
 
 
 const BlogPost = (props) => {
+  const thisPostsId = props.pathContext.id;
   const { relatedPosts, blogPostData: post } = props.data;
+  let related = [];
+  // remove self from related posts
+  for( let i = 0; i < relatedPosts.edges.length; i++ ){
+    if (relatedPosts.edges[i].node.id !== thisPostsId) {
+      related.push(relatedPosts.edges[i]);
+    }
+  }
+  console.log(related)
   return (
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         frontmatter={post.frontmatter}
         slug={post.fields.slug}
-        related={relatedPosts.edges}
+        related={related}
       />
   )
 }
@@ -107,7 +117,7 @@ export class BlogPostTemplate extends React.Component {
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
     let headImg = null;
-    if (author) {  
+    if (author) {
       switch (author.toLowerCase()) {
         case 'jimmy chion':
           headImg = JimmyHead;
@@ -173,6 +183,7 @@ export class BlogPostTemplate extends React.Component {
           url={`https://blog.bythebay.cool/${slug}`}
         />
         <RelatedPosts posts={related}/>
+        <BottomNavigation/>
       </div>
     )
   }
@@ -207,12 +218,13 @@ export const pageQuery = graphql`
     }
 
     relatedPosts: allMarkdownRemark(
-      limit: 3,
+      limit: 4,
       sort: {fields: [frontmatter___date], order: DESC},
       filter: {frontmatter: {tags: {in: $tags}}}
     ) {
       edges {
         node {
+          id
           frontmatter {
 						title
             description
