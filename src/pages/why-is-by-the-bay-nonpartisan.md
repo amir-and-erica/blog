@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: Why is By The Bay nonpartisan?
 author: Yvonne Leow
-image: /img/products-grid3.jpg
 smTitle: Why is By The Bay nonpartisan?
 smDescription: >-
   People ask us "Why did you launch a nonpartisan local media company when it'd
