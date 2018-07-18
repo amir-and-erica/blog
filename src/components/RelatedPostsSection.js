@@ -67,7 +67,7 @@ const ReturnText = styled.h3`
 `
 
 const RelatedPostsSection = (props) => {
-  const numPosts = props.posts ? props.props.length : 0
+  const numPosts = props.posts ? props.posts.length : 0
   const HeadingText = numPosts > 1?"Read some related posts":"Here's one more";
   const RelatedPosts =
     props.posts.map((post, i)=>{
