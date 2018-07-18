@@ -13,6 +13,7 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
         author:entry.getIn(['data','author']),
         date:entry.getIn(['data','date']),
         image:entry.getIn(['data','image']),
+        color: entry.getIn(['data','color'])
       }}
     />
   )

@@ -21,6 +21,11 @@ const FrontImage = styled.img`
   object-position: 50% 50%;
   box-shadow: 0 2px 10px #eee;
 `
+const TitleContainer = styled.div`
+  @media screen and (max-width: 767px) {
+    margin-left: 10px;
+  }
+`
 
 const Title = styled.h1`
   text-align: left;
@@ -37,12 +42,6 @@ const AuthorAndDate = styled.div`
 const Author = styled.h4`
   color: #777;
 `
-const AuthorImg = styled.img`
-  height: 40px;
-  margin-right: 20px;
-  user-select: none;
-  filter: drop-shadow(1px 3px 2px #eee);
-`
 
 const Date = styled.h4`
   color: #999;
@@ -52,7 +51,8 @@ const Attribution = styled.div`
   margin-top: ${props=>props.offset}px;
   @media screen and (max-width: 767px) {
     margin-top: 0;
-    width: 100%;
+    margin-left: 10px;
+    width: calc(100% - 20px);
   }
 `
 
@@ -132,9 +132,11 @@ export class BlogPostTemplate extends React.Component {
             mdOffset={1} md={6}
             lgOffset={1} lg={6}
           >
-            <Spacer height={60} xsHeight={30}/>
-            <Title>{title}</Title>
-            <Subtitle>{description}</Subtitle>
+            <TitleContainer>
+              <Spacer height={60} xsHeight={30}/>
+              <Title>{title}</Title>
+              <Subtitle>{description}</Subtitle>
+            </TitleContainer>
           </Col>
           <Col
             xsOffset={0} xs={12}
@@ -146,7 +148,7 @@ export class BlogPostTemplate extends React.Component {
               <Line color={Color(color)}/>
               <Spacer height={25}/>
               <AuthorAndDate>
-                { headImg && <AuthorImg src={headImg} alt="author"/> }
+                { headImg && <img className='author-head-img' src={headImg} alt="author"/> }
                 <div>
                   <Author>By {author}</Author>
                   <Date>{date}</Date>
