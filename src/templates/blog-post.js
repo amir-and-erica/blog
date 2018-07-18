@@ -12,6 +12,8 @@ import '../layouts/template-styles/blog-post-style-1.css'
 import Color from '../layouts/colors'
 import SocialMediaButtons from '../components/socialMediaButtons'
 import RelatedPosts from '../components/RelatedPostsSection'
+import JimmyHead from './images/jimmy.png'
+import YvonneHead from './images/yvonne.png'
 
 const FrontImage = styled.img`
   max-height: 200px;
@@ -30,8 +32,17 @@ const Subtitle = styled.p`
   font-style: italic;
   text-align: left;
 `
+const AuthorAndDate = styled.div`
+  display: flex;
+`
+
 const Author = styled.h4`
   color: #777;
+`
+const AuthorImg = styled.img`
+  height: 40px;
+  margin-right: 20px;
+  user-select: none;
 `
 
 const Date = styled.h4`
@@ -96,6 +107,17 @@ export class BlogPostTemplate extends React.Component {
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
+    let headImg = YvonneHead;
+    switch (author.toLowerCase()) {
+      case 'jimmy chion':
+        headImg = JimmyHead;
+        break;
+      case 'yvonne leow':
+        headImg = YvonneHead;
+        break;
+      default:
+        break;
+    }
     return (
       <div>
         <Head
@@ -124,8 +146,13 @@ export class BlogPostTemplate extends React.Component {
             <Attribution offset={this.state.topOffset}>
               <Line color={Color(color)}/>
               <Spacer height={25}/>
-              <Author>By {author}</Author>
-              <Date>{date}</Date>
+              <AuthorAndDate>
+                <AuthorImg src={headImg} alt="author"/>
+                <div>
+                  <Author>By {author}</Author>
+                  <Date>{date}</Date>
+                </div>
+              </AuthorAndDate>
             </Attribution>
 
           </Col>
