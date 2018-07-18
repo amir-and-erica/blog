@@ -70,7 +70,7 @@ const RelatedPostsSection = (props) => {
   const numPosts = props.posts ? props.posts.length : 0
   const HeadingText = numPosts > 1?"Read some related posts":"Here's one more";
   const RelatedPosts =
-    props.posts.map((post, i)=>{
+    props.posts?props.posts.map((post, i)=>{
       const {title, description, color} = post.node.frontmatter;
       return(
         <StyledLink to={post.node.fields.slug} key={i} >
@@ -82,7 +82,7 @@ const RelatedPostsSection = (props) => {
           </DropShadow>
         </StyledLink>
       )
-    })
+    }):null;
   return(
     <React.Fragment>
       {
