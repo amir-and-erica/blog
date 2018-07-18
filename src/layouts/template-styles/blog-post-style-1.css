@@ -28,13 +28,14 @@
 }
 
 .author-head-img {
+  width: auto;
   height: 40px;
   margin-right: 20px;
   user-select: none;
   filter: drop-shadow(1px 3px 2px #eee);
 }
 
-.social-icon {
+.blog-post-body svg{
   height: 40px;
   width: 40px;
 }

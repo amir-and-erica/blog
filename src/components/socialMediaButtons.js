@@ -65,7 +65,6 @@ const Icon = (props) => {
   		target="_blank"
   		rel="noopener noreferrer"
   		href={props.url}
-			className="social-icon"
   	>
   		<Contain>{props.img}</Contain>
   	</IconContainer>
