@@ -107,7 +107,7 @@ export class BlogPostTemplate extends React.Component {
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
-    let headImg = YvonneHead;
+    let headImg = null;
     switch (author.toLowerCase()) {
       case 'jimmy chion':
         headImg = JimmyHead;
@@ -147,7 +147,7 @@ export class BlogPostTemplate extends React.Component {
               <Line color={Color(color)}/>
               <Spacer height={25}/>
               <AuthorAndDate>
-                <AuthorImg src={headImg} alt="author"/>
+                { headImg && <AuthorImg src={headImg} alt="author"/> }
                 <div>
                   <Author>By {author}</Author>
                   <Date>{date}</Date>

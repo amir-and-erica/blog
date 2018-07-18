@@ -1,12 +1,15 @@
 # Blog – By The Bay
 
-### Run a local development server
+### Run it locally
 ```
 git clone https://github.com/amir-and-erica/blog
 cd blog
 yarn install
 gatsby develop
 ```
+
+### Deploy it
+Push it to master. Handled on [Netlify](https://www.netlify.com).
 
 ### Write a post
 CMS is located at [https://bythebayblog.netlify.com/admin/](https://bythebayblog.netlify.com/admin/)
