@@ -66,7 +66,7 @@ const Icon = (props) => {
   		rel="noopener noreferrer"
   		href={props.url}
   	>
-  		<Contain>{props.img}</Contain>
+  		<Contain className="social-media-icons">{props.img}</Contain>
   	</IconContainer>
 	);
 }

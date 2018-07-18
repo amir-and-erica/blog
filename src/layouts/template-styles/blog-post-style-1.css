@@ -35,7 +35,8 @@
   filter: drop-shadow(1px 3px 2px #eee);
 }
 
-.blog-post-body svg{
+/*aimed at social media icons on netlify CMS*/
+.social-media-icons svg {
   height: 40px;
   width: 40px;
 }
