@@ -67,7 +67,8 @@ const ReturnText = styled.h3`
 `
 
 const RelatedPostsSection = (props) => {
-  const HeadingText = props.posts.length > 1?"Read some related posts":"Here's one more";
+  const numPosts = props.posts ? props.props.length : 0
+  const HeadingText = numPosts > 1?"Read some related posts":"Here's one more";
   const RelatedPosts =
     props.posts.map((post, i)=>{
       const {title, description, color} = post.node.frontmatter;
@@ -85,7 +86,7 @@ const RelatedPostsSection = (props) => {
   return(
     <React.Fragment>
       {
-        props.posts.length > 0 && props.posts ?
+        props.posts && props.posts.length ?
           <div>
             <SectionTitle>{HeadingText}</SectionTitle>
             <Spacer height={20}/>
