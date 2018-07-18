@@ -107,15 +107,17 @@ export class BlogPostTemplate extends React.Component {
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
     let headImg = null;
-    switch (author.toLowerCase()) {
-      case 'jimmy chion':
-        headImg = JimmyHead;
-        break;
-      case 'yvonne leow':
-        headImg = YvonneHead;
-        break;
-      default:
-        break;
+    if (author) {  
+      switch (author.toLowerCase()) {
+        case 'jimmy chion':
+          headImg = JimmyHead;
+          break;
+        case 'yvonne leow':
+          headImg = YvonneHead;
+          break;
+        default:
+          break;
+      }
     }
     return (
       <div>
