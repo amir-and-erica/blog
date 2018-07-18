@@ -41,6 +41,7 @@ const AuthorImg = styled.img`
   height: 40px;
   margin-right: 20px;
   user-select: none;
+  filter: drop-shadow(1px 3px 2px #eee);
 `
 
 const Date = styled.h4`
