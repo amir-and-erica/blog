@@ -34,9 +34,13 @@ Resources I found when trying to make this
 
 @AustinGreen's starter project is good and combines all you need to get a Gatsby project on Netlify and using the Netlify CMS. I wanted to roll my own, so from that, I made a new starter project.
 
+![screenshot of template](/img/preview.png)
+
 ## Our own template
 
-Can be found here: 
+Can be found here: <https://github.com/cjimmy/gatsby-netlify-cms-blog>
+
+And you can [preview here](https://thirsty-allen-fe06d5.netlify.com/).
 
 Some notable structural changes:
 
