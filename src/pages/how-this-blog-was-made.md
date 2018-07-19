@@ -20,7 +20,7 @@ _This is going to be a technical blog post that goes through how to set up a lig
 
 Netlify does a lot. It can host a site on its CDN, continuously build + deploy from Github, manage your DNS, and abstract away common backend functions like forms or identity management. There are a lot of hosting options out there, but Netlify seems readily made for simple React single-page apps that don't need a complicated backend. In other words, it pairs well with a static site generator and makes SSL, pre-rendering, and continuous deployment really easy to set up. It's also very fast + free. Its pre-rendering feature is the primary reason we use it to host our main site, [By The Bay](https://www.bythebay.cool/).
 
-Netlify also provides a super simple and customizable CMS (content management system) that allows us to write blog posts without having to write code. 
+Netlify also provides a super simple and customizable CMS (content management system) that allows us to write blog posts in markdown without having to write code. 
 
 Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](https://jamstack.org/). You can think of it as a more opinionated Create React App, just for static sites. We only use Gatsby for this blog, but we're fans of Gatsby's creator, @KyleAMathew's work and use his [typography modules](https://github.com/KyleAMathews/typefaces) on npm.
 
@@ -28,8 +28,20 @@ Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](ht
 
 Resources I found when trying to make this
 
-* Starter project: <https://github.com/AustinGreen/gatsby-starter-netlify-cms>
-* Gatsby documentation (v1, not v2): <https://www.gatsbyjs.org/docs/netlify-cms/>
-* Netlify documentation (sans CMS): <https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/>
+* **Starter project**: <https://github.com/AustinGreen/gatsby-starter-netlify-cms>
+* **Gatsby documentation** (v1, not v2): <https://www.gatsbyjs.org/docs/netlify-cms/>
+* **Netlify documentation **(sans CMS): <https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/>
 
-Despite having a template already out there, it took some work for it to work out of the box, hence why I am writing this.
+@AustinGreen's starter project is good and combines all you need to get a Gatsby project on Netlify and using the Netlify CMS. I wanted to roll my own, so from that, I made a new starter project.
+
+## Our own template
+
+Can be found here: 
+
+Some notable structural changes:
+
+* **_Styled Components_ instead of inline styles:** Gatsby likes to inline css styles. I much prefer [styled components](https://www.styled-components.com/) which Gatsby neatly has a module for.
+* **Removes Sass **– because we already have _one_ CSS module.
+* **Adds react-flexbox-grid** – for a grid system. Not necessary for the example, just makes things pretty.
+* **Adds fields to frontmatter **– to have an image for the blog post, add authors, and to fill out the <head> tag to make it social media friendly. (The frontmatter of a post is kinda like the meta info + head).
+* **Removes tag pages **– and instead queries for the top 3 most recent posts that share a common tag.
