@@ -14,6 +14,8 @@ tags:
   - coding
   - design
   - blog
+  - github
+  - opensource
 ---
 _This is going to be a technical blog post that goes through how to set up a lightweight blog with [Netlify](https://www.netlify.com/) and [Gatsby](https://www.gatsbyjs.org/). I'm assuming you have a beginner-level understanding of web development._
 
