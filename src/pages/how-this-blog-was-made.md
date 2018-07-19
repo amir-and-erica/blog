@@ -3,9 +3,10 @@ templateKey: blog-post
 title: How this blog was made
 description: A quick tutorial on how to make a blog with Netlify + Gatsby
 author: Jimmy Chion
+image: /img/howthisblogwasmade.png
 smTitle: How to make a blog with Netlify + Gatsby
 smDescription: 'A quick tutorial, in use on this site.'
-color: blue
+color: purple
 date: '2018-07-18T15:54:03-07:00'
 tags:
   - netlify
