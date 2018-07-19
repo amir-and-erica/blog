@@ -17,6 +17,7 @@
   object-fit: cover;
   align-self: center;
   border-radius: 4px;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
 }
 
 .blog-post-body h2, .blog-post-body h3{
