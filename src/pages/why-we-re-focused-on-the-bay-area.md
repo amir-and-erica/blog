@@ -1,12 +1,13 @@
 ---
 templateKey: blog-post
 title: Why we're focused on the Bay Area
+description: 'San Franciscans have the political appetite, but nobody wants to feel confused'
 author: Jimmy Chion
+image: /img/hardik-pandya-535344-unsplash.jpg
 smTitle: By The Bay's focus is The Bay
 smDescription: And why we're first trying it here
 color: lightblue
 date: '2018-07-18T11:45:27-07:00'
-description: San Franciscans have the political appetite, but nobody wants to feel confused
 tags:
   - bay area
   - voter guide
