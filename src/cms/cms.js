@@ -2,5 +2,7 @@ import CMS from 'netlify-cms'
 
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 
-CMS.registerPreviewStyle('/styles.css') //-- path is absolute from built project
+//-- path is absolute from built project
+//-- Gatsby compiles .css files to `styles.css`
+CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
