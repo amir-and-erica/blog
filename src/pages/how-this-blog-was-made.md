@@ -41,7 +41,7 @@ Can be found here:
 Some notable structural changes:
 
 * **_Styled Components_ instead of inline styles:** Gatsby likes to inline css styles. I much prefer [styled components](https://www.styled-components.com/) which Gatsby neatly has a module for.
-* **Removes Sass **– because we already have _one_ CSS module.
+* **Removes Sass** – because we already have _one_ CSS module.
 * **Adds react-flexbox-grid** – for a grid system. Not necessary for the example, just makes things pretty.
-* **Adds fields to frontmatter **– to have an image for the blog post, add authors, and to fill out the <head> tag to make it social media friendly. (The frontmatter of a post is kinda like the meta info + head).
-* **Removes tag pages **– and instead queries for the top 3 most recent posts that share a common tag.
+* **Adds fields to frontmatter** – to have an image for the blog post, add authors, and to fill out the <head> tag to make it social media friendly. (The frontmatter of a post is kinda like the meta info + head).
+* **Removes tag pages** – and instead queries for the top 3 most recent posts that share a common tag.
