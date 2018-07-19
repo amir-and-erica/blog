@@ -40,7 +40,7 @@ Resources I found when trying to make this
 
 Can be found here: <https://github.com/cjimmy/gatsby-netlify-cms-blog>
 
-And you can [preview here](https://thirsty-allen-fe06d5.netlify.com/).
+And you can [preview here](https://gatsby-netlify-cms-blog.netlify.com/).
 
 Some notable structural changes:
 
