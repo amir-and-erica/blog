@@ -4,13 +4,17 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Color from '../layouts/colors'
-import IndexPagePost from '../components/IndexPagePost'
 import {Spacer} from '../layouts/util'
 import Head from '../layouts/head'
 
 const PostMetaTextContainer = styled.div`
   margin-right: 20px;
-  width:60%;
+  width: 60%;
+`
+const PostContainer = styled.div`
+  position: relative;
+  margin: 40px 0;
+  background: white;
 `
 
 const Line = styled.div`
@@ -111,7 +115,7 @@ class IndexPage extends React.Component {
     const allPosts = posts.map(({ node: post }) => {
       const {color, image, date, title, author} = post.frontmatter;
       return(
-        <IndexPagePost key={post.id}>
+        <PostContainer key={post.id}>
           <Row>
             <Col
               xsOffset={1} xs={10}
@@ -148,7 +152,7 @@ class IndexPage extends React.Component {
             </Col>
           </Row>
 
-        </IndexPagePost>
+        </PostContainer>
       )
     }
   );
