@@ -58,15 +58,17 @@ ul {
 
 h1 {
   font-family: Abril Fatface, Georgia, Times New Roman, slab-serif;
-  font-size: 40px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 70px;
+  font-size: 70px;
+  letter-spacing: -2px;
 }
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: -1px;
   }
 }
 

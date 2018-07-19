@@ -10,6 +10,9 @@ import Head from '../layouts/head'
 const PostMetaTextContainer = styled.div`
   margin-right: 20px;
   width: 60%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `
 const PostContainer = styled.div`
   position: relative;
@@ -37,16 +40,23 @@ const PostTitle = styled.h2`
       text-decoration-color: ${props=>props.color?Color(props.color):'#333'};
     }
   }
+  @media screen and (max-width: 767px) {
+    text-align: left;
+  }
 `;
 
 const MetaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media screen and (max-width: 767px) {
+    align-items: flex-start;
+  }
 `
 
 const PostImageContainer = styled.div`
   width: 80%;
+
 `
 const PostImage = styled.img`
   object-fit: cover;
@@ -75,6 +85,9 @@ const Author = styled.h4`
   color: #999;
   text-align: right;
   margin-top: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: left;
+  }
 `
 
 const Date = styled.h4`
@@ -89,11 +102,20 @@ const BlogTitle = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 0 40px;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 `
 const BlogDescription = styled.div`
   margin-left: 30px;
-  margin-top: 9px;
+  margin-top: 40px;
   font-style: italic;
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 `
 const BlogName = styled.h1`
   font-size: 70px;
@@ -106,9 +128,6 @@ const Excerpt = styled.div`
 
 
 class IndexPage extends React.Component {
-  // <PostImageContainer>
-  //   <PostImage src={image} alt=""/>
-  // </PostImageContainer>
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -161,7 +180,7 @@ class IndexPage extends React.Component {
       <div>
         <Head/>
         <BlogTitle>
-          <BlogName>BTW</BlogName>
+          <BlogName>ByTheWay</BlogName>
           <BlogDescription>Our sidebar on journalism, local issues, and elections.</BlogDescription>
         </BlogTitle>
         {allPosts}
