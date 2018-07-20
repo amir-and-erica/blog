@@ -7,7 +7,7 @@ image: /img/howthisblogwasmade.png
 smTitle: How to make a blog
 smDescription: A quick tutorial about how we made a blog with Netlify + Gatsby
 color: purple
-date: '2018-07-18T15:54:03-07:00'
+date: '2018-07-20T12:00:00-07:00'
 tags:
   - netlify
   - gatsby
@@ -19,9 +19,11 @@ tags:
 ---
 ## Why a custom blog?
 
-In short, part of our voice is how we present information, and that includes our visual design. Having full control of the code behind the web design allows us to present our voice in the way we think is best.
+In short, part of our voice is how we present information, and that includes our visual design. Having full control of the code behind the web design allows us to present our voice in the way we think is best for you.
 
-We considered using a variety of other solutions, but in the end, the cost to make something custom (about a week of my time) was worth the control of every aspect of the site.
+We considered using a variety of other solutions, but in the end, the cost to make something custom (about a week of my time) was worth the control of every aspect of the site. For example, Medium no longer allows custom domains, so this site would be on the URL medium.com/by-the-bay-blog rather than blog.bythebay.cool.
+
+You might consider building your own blog if existing blog platforms don't meet all your needs. Netlify + Gatsby make spinning up a blog pretty easy.
 
 ---
 
@@ -29,11 +31,13 @@ _The following is a technical rundown that walks through how to set up a lightwe
 
 ## Intro to Netlify and Gatsby
 
-Netlify does a lot. It can host a site on its CDN, continuously build + deploy from Github, manage your DNS, and abstract away common backend functions like forms or identity management. There are a lot of hosting options out there, but Netlify seems readily made for simple React single-page apps that don't need a complicated backend. In other words, it pairs well with a static site generator and makes SSL, pre-rendering, and continuous deployment really easy to set up. It's also very fast + free. Its pre-rendering feature is the primary reason we use it to host our main site, [By The Bay](https://www.bythebay.cool/).
+Netlify and Gatsby are pretty perfect for each other. 
+
+Netlify can do a lot. It can host a site on its CDN, continuously build + deploy from Github, manage your DNS, and abstract away common backend functions like forms or identity management. There are a lot of hosting options out there, but Netlify seems readily made for simple React single-page apps that don't need a complicated backend. It pairs well with a static site generator and makes SSL, pre-rendering, and continuous deployment really easy to set up. It's also very fast + free. Its pre-rendering feature is the primary reason we use it to host our main site, [By The Bay](https://www.bythebay.cool/).
 
 Netlify also provides a super simple and customizable CMS (content management system) that allows us to write blog posts in markdown without having to write code.
 
-Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](https://jamstack.org/). You can think of it as a more opinionated Create React App, just for static sites. We only use Gatsby for this blog, but we're fans of Gatsby's creator @KyleAMathew's work and we use his [typography modules](https://github.com/KyleAMathews/typefaces) on npm.
+Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](https://jamstack.org/). You can think of it as a more opinionated Create React App, just for static sites. We only use Gatsby for this blog, but we're fans of Gatsby's creator @KyleAMathew's work and we use his [typography modules](https://github.com/KyleAMathews/typefaces) on npm. 
 
 ## Creating a blog and deploying it
 
