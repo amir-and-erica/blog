@@ -35,7 +35,7 @@ If we're going to make a site about local politics, we need an audience that car
 
 ## A lack of local political coverage
 
-The state of media is not in a good place. There's little investment in news, which results in less coverage around important topics. Trust in media is at an all-time low. Journalism as a business is struggling because Google and Facebook are taking the lion's share of ad revenue. And people don't care what they don't know about. 
+_The state of media is not in a good place. There's little investment in news, which results in less coverage around important topics. Trust in media is at an all-time low. Journalism as a business is struggling because Google and Facebook are taking the lion's share of ad revenue. And people don't care what they don't know about. -- can we find links to some of these statements? they seem like we're repeating stereotypical notions w/o any evidence.. otherwise good!_
 
 We started in SF because it's needed.
 
