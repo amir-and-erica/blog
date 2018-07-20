@@ -27,25 +27,25 @@ You might consider building your own blog if existing blog platforms don't meet 
 
 ---
 
-_The following is a technical rundown that walks through how to set up a lightweight blog with [Netlify](https://www.netlify.com/) and [Gatsby](https://www.gatsbyjs.org/). I'm assuming you have a beginner-level understanding of web development. _
+_The following is a technical rundown that walks through how to set up a lightweight blog with [Netlify](https://www.netlify.com/) and [Gatsby](https://www.gatsbyjs.org/). I'm assuming you have a beginner-level understanding of web development._
 
 ## Intro to Netlify and Gatsby
 
-Netlify and Gatsby are pretty perfect for each other. 
+Netlify and Gatsby are pretty perfect for each other.
 
 Netlify can do a lot. It can host a site on its CDN, continuously build + deploy from Github, manage your DNS, and abstract away common backend functions like forms or identity management. There are a lot of hosting options out there, but Netlify seems readily made for simple React single-page apps that don't need a complicated backend. It pairs well with a static site generator and makes SSL, pre-rendering, and continuous deployment really easy to set up. It's also very fast + free. Its pre-rendering feature is the primary reason we use it to host our main site, [By The Bay](https://www.bythebay.cool/).
 
 Netlify also provides a super simple and customizable CMS (content management system) that allows us to write blog posts in markdown without having to write code.
 
-Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](https://jamstack.org/). You can think of it as a more opinionated Create React App, just for static sites. We only use Gatsby for this blog, but we're fans of Gatsby's creator @KyleAMathew's work and we use his [typography modules](https://github.com/KyleAMathews/typefaces) on npm. 
+Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](https://jamstack.org/). You can think of it as a more opinionated Create React App, just for static sites. We only use Gatsby for this blog, but we're fans of Gatsby's creator @KyleAMathew's work and we use his [typography modules](https://github.com/KyleAMathews/typefaces) on npm.
 
 ## Creating a blog and deploying it
 
 Here are the resources I found while trying to make this:
 
-* [Starter project by @AustinGreen](<https://github.com/AustinGreen/gatsby-starter-netlify-cms>): 
-* [Gatsby documentation](https://www.gatsbyjs.org/docs/netlify-cms/) (v1): 
-* [Netlify documentation](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/) (sans CMS): 
+* [Starter project by @AustinGreen](<https://github.com/AustinGreen/gatsby-starter-netlify-cms>):
+* [Gatsby documentation](https://www.gatsbyjs.org/docs/netlify-cms/) (v1):
+* [Netlify documentation](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/) (sans CMS):
 
 @AustinGreen's starter project is good and combines all you need to get a Gatsby project on Netlify and using the Netlify CMS. I wanted to roll my own, so from that, I made a new starter project.
 
