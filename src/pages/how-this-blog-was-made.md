@@ -17,7 +17,15 @@ tags:
   - github
   - opensource
 ---
-_This is a technical post that walks through how to set up a lightweight blog with [Netlify](https://www.netlify.com/) and [Gatsby](https://www.gatsbyjs.org/). I'm assuming you have a beginner-level understanding of web development. **can you explain in 1-2 sentences why we decided to create our own blog and why others would want to do the same? the why is never really addressed and we should try to present the case so people would read the rest of post. **_
+## Why a custom blog?
+
+In short, part of our voice is how we present information, and that includes our visual design. Having full control of the code behind the web design allows us to present our voice in the way we think is best.
+
+We considered using a variety of other solutions, but in the end, the cost to make something custom (about a week of my time) was worth the control of every aspect of the site.
+
+---
+
+_The following is a technical rundown that walks through how to set up a lightweight blog with [Netlify](https://www.netlify.com/) and [Gatsby](https://www.gatsbyjs.org/). I'm assuming you have a beginner-level understanding of web development. _
 
 ## Intro to Netlify and Gatsby
 
@@ -31,9 +39,9 @@ Gatsby is a static site generator based on React, GraphQL, and the [JAMstack](ht
 
 Here are the resources I found while trying to make this:
 
-* **Starter project**: <https://github.com/AustinGreen/gatsby-starter-netlify-cms>
-* **Gatsby documentation** (v1, not v2): <https://www.gatsbyjs.org/docs/netlify-cms/>
-* **Netlify documentation** (sans CMS): <https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/>
+* [Starter project by @AustinGreen](<https://github.com/AustinGreen/gatsby-starter-netlify-cms>): 
+* [Gatsby documentation](https://www.gatsbyjs.org/docs/netlify-cms/) (v1): 
+* [Netlify documentation](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/) (sans CMS): 
 
 @AustinGreen's starter project is good and combines all you need to get a Gatsby project on Netlify and using the Netlify CMS. I wanted to roll my own, so from that, I made a new starter project.
 
