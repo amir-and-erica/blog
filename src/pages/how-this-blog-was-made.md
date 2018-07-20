@@ -16,6 +16,7 @@ tags:
   - blog
   - github
   - opensource
+  - meta
 ---
 ## Why a custom blog?
 
