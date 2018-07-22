@@ -7,7 +7,8 @@ image: /img/howthisblogwasmade.png
 smTitle: How to make a blog
 smDescription: A quick tutorial about how we made a blog with Netlify + Gatsby
 color: purple
-date: '2018-07-20T12:00:00-07:00'
+dateCreated: '2018-07-20T12:00:00-07:00'
+dateModified: '2018-07-20T12:00:00-07:00'
 tags:
   - netlify
   - gatsby

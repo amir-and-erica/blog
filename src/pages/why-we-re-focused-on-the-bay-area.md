@@ -7,7 +7,8 @@ image: /img/hardik-pandya-535344-unsplash.jpg
 smTitle: Why By The Bay started in the Bay Area
 smDescription: It's a unique time and place to be starting a media business
 color: lightblue
-date: '2018-07-20T15:00:00-07:00'
+dateCreated: '2018-07-20T15:00:00-07:00'
+dateModified: '2018-07-20T15:00:00-07:00'
 tags:
   - bay area
   - voter guide

@@ -111,7 +111,18 @@ export class BlogPostTemplate extends React.Component {
 
   render() {
     const { content, contentComponent, frontmatter, slug, related} = this.props;
-    const  { description, tags, title, date, author, color, smTitle, smDescription, image} = frontmatter;
+    const  {
+      description,
+      tags,
+      title,
+      dateCreated,
+      dateModified,
+      author,
+      color,
+      smTitle,
+      smDescription,
+      image
+    } = frontmatter;
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
@@ -135,6 +146,10 @@ export class BlogPostTemplate extends React.Component {
           title={`${SocialTitle} – By The Way`}
           headline={SocialTitle || "By The Way blog post"}
           description={SocialDescription || "Yes of course it's something interesting."}
+          author={author}
+          dateCreated={dateCreated}
+          dateModified={dateModified}
+          image={`https://blog.bythebay.cool${image}`}
         />
         <Row>
           <Col
@@ -162,7 +177,8 @@ export class BlogPostTemplate extends React.Component {
                 { headImg && <img className='author-head-img' src={headImg} alt="author"/> }
                 <div>
                   <Author>By {author}</Author>
-                  <Date>{date}</Date>
+                  <Date>{dateCreated}</Date>
+                  {dateModified !== dateCreated && <Date>Edited {dateModified}</Date>}
                 </div>
               </AuthorAndDate>
             </Attribution>
@@ -205,7 +221,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         author
-        date(formatString: "MMMM DD, YYYY")
+        dateCreated(formatString: "MMMM DD, YYYY")
+        dateModified(formatString: "MMMM DD, YYYY")
         title
         description
         color
@@ -218,7 +235,7 @@ export const pageQuery = graphql`
 
     relatedPosts: allMarkdownRemark(
       limit: 4,
-      sort: {fields: [frontmatter___date], order: DESC},
+      sort: {fields: [frontmatter___dateCreated], order: DESC},
       filter: {frontmatter: {tags: {in: $tags}}}
     ) {
       edges {
