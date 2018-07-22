@@ -68,7 +68,6 @@ const BlogPost = (props) => {
       related.push(relatedPosts.edges[i]);
     }
   }
-  console.log(related)
   return (
       <BlogPostTemplate
         content={post.html}
