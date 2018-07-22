@@ -103,9 +103,9 @@ const Head = (props) => (
             "headline": "${props.title}",
             "url": "${props.url}",
             "image": "${props.image}",
-            "datePublished": "${props.dateCreated || '""'}",
-            "dateCreated": "${props.dateCreated || '""'}",
-            "dateModified": "${props.dateModified || props.date || '""'}",
+            "datePublished": "${props.dateCreated || ""}",
+            "dateCreated": "${props.dateCreated || ""}",
+            "dateModified": "${props.dateModified || props.date || ""}",
             "mainEntityOfPage":"Blog post of By The Bay",
             "Publisher": {
               "@type": "Organization",
@@ -117,7 +117,7 @@ const Head = (props) => (
             },
             "author": {
               "@type": "Person",
-              "name":"${props.author || '""'}"
+              "name":"${props.author || ""}"
             },
             "description": "${props.description}"
           }
