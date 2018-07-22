@@ -100,7 +100,7 @@ const Head = (props) => (
           },
           "blogPost": {
             "@type": "BlogPosting",
-            "headline": "${props.title}",
+            "headline": "${(props.title).replace(/\"/g, "'")}",
             "url": "${props.url}",
             "image": "${props.image}",
             "datePublished": "${props.dateCreated || ""}",
@@ -117,9 +117,9 @@ const Head = (props) => (
             },
             "author": {
               "@type": "Person",
-              "name":"${props.author || ""}"
+              "name":"${(props.author).replace(/\"/g, "'") || ""}"
             },
-            "description": "${props.description}"
+            "description": "${(props.description).replace(/\"/g, "'")}"
           }
         }
       `}
