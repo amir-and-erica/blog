@@ -126,6 +126,7 @@ export class BlogPostTemplate extends React.Component {
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
+    const urlToFrontImage = image ? "https://blog.bythebay.cool"+image : undefined;
     let headImg = null;
     if (author) {
       switch (author.toLowerCase()) {
@@ -149,7 +150,7 @@ export class BlogPostTemplate extends React.Component {
           author={author}
           dateCreated={dateCreated}
           dateModified={dateModified}
-          image={`https://blog.bythebay.cool${image}`}
+          image={urlToFrontImage}
         />
         <Row>
           <Col

@@ -102,7 +102,7 @@ const Head = (props) => (
             "@type": "BlogPosting",
             "headline": "${props.title && (props.title).replace(/\"/g, "'")}",
             "url": "${props.url}",
-            "image": "${props.image}",
+            "image": "${props.image || ""}",
             "datePublished": "${props.dateCreated || ""}",
             "dateCreated": "${props.dateCreated || ""}",
             "dateModified": "${props.dateModified || props.date || ""}",
