@@ -90,8 +90,20 @@ const Head = (props) => (
             "name": "By The Bay",
             "description": "By The Bay provides local political and election information for the Bay Area in California",
             "email": "hi@bytheybay.cool",
+            "contactPoint": [
+            	{
+                "@type": "ContactPoint",
+                "telephone": "+1 (415) 617-5970",
+                "contactType": "customer service"
+            	}
+            ],
             "founder": ["Jimmy Chion", "Yvonne Leow"],
-            "logo": "https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png"
+            "logo": "https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png",
+            "sameAs": [
+            	"https://www.facebook.com/bythebaydotcool/",
+              "https://twitter.com/bythebaydotcool/",
+              "https://www.instagram.com/bythebaydotcool/"
+            ]
           },
           "image":{
             "@type":"ImageObject",
@@ -144,8 +156,8 @@ Head.propTypes = {
   headline: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   author: PropTypes.string,
-  dateCreated: PropTypes.string,
-  dateModified: PropTypes.string,
+  dateCreated: PropTypes.instanceOf(Date),
+  dateModified: PropTypes.instanceOf(Date),
   image: PropTypes.string.isRequired,
 }
 

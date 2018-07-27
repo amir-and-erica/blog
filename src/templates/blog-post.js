@@ -44,7 +44,7 @@ const Author = styled.h4`
   color: #777;
 `
 
-const Date = styled.h4`
+const Timestamp = styled.h4`
   color: #999;
 `
 
@@ -123,6 +123,12 @@ export class BlogPostTemplate extends React.Component {
       smDescription,
       image
     } = frontmatter;
+    const dateOptions = {month: "2-digit", day: "2-digit", year: "2-digit", hour: '2-digit', minute:'2-digit'}
+    const dateCreatedObj = new Date(dateCreated);
+    const dateModifiedObj = new Date(dateCreated);
+    const timestamp = (dateCreatedObj.getTime() !== dateModifiedObj.getTime()) ?
+      `Last updated on \r\n${dateModifiedObj.toLocaleString([], dateOptions)}` :
+      `Published on ${dateCreatedObj.toLocaleString([], dateOptions)}`;
     const PostContent = contentComponent || Content;
     const SocialTitle = smTitle || title;
     const SocialDescription = smDescription || description;
@@ -148,8 +154,8 @@ export class BlogPostTemplate extends React.Component {
           headline={SocialTitle || "By The Way blog post"}
           description={SocialDescription || "Yes of course it's something interesting."}
           author={author}
-          dateCreated={dateCreated}
-          dateModified={dateModified}
+          dateCreated={dateCreatedObj}
+          dateModified={dateModifiedObj}
           image={urlToFrontImage}
         />
         <Row>
@@ -178,8 +184,7 @@ export class BlogPostTemplate extends React.Component {
                 { headImg && <img className='author-head-img' src={headImg} alt="author"/> }
                 <div>
                   <Author>By {author}</Author>
-                  <Date>{dateCreated}</Date>
-                  {dateModified !== dateCreated && <Date>Edited {dateModified}</Date>}
+                  <Timestamp>{timestamp}</Timestamp>
                 </div>
               </AuthorAndDate>
             </Attribution>
@@ -222,8 +227,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         author
-        dateCreated(formatString: "MMMM DD, YYYY")
-        dateModified(formatString: "MMMM DD, YYYY")
+        dateCreated
+        dateModified
         title
         description
         color
