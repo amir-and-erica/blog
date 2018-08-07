@@ -5,7 +5,7 @@ description: How By The Bay differs from the official guide to give you more
 author: Jimmy Chion
 smTitle: Who writes the SF mailed ballot guide?
 smDescription: Behind the SF Ballot Simplification Committee
-color: lightblue
+color: purple
 dateCreated: '2018-08-07T13:58:30-07:00'
 dateModified: '2018-08-07T13:58:30-07:00'
 tags:
@@ -46,7 +46,7 @@ At By The Bay, we update our guide on a daily basis, giving you news that might 
 
 Here's the wild part – even if the Police Commission had passed that policy during the period of writing the official voter guide, the Ballot Simplification Committee wouldn't have been able to include it. It can only summarize the information in the proposed initiative. It cannot interpret, predict, or add information.
 
-We explain ballot propositions as if you've never heard of them. This requires context that may not exist in the policy. After all, the policy is written to persuade, not to explain. We're here to explain.
+We explain ballot propositions as if you've never heard of them. This requires context that may not exist in the policy. After all, policy is often written to persuade, not to explain.
 
 ## We assume you're smarter than an 8th grader
 
