@@ -6,8 +6,8 @@ author: Jimmy Chion
 smTitle: Who writes the SF mailed ballot guide?
 smDescription: Behind the SF Ballot Simplification Committee
 color: purple
-dateCreated: '2018-08-07T13:58:30-07:00'
-dateModified: '2018-08-07T13:58:30-07:00'
+dateCreated: '2018-08-09T13:58:30-07:00'
+dateModified: '2018-08-09T13:58:30-07:00'
 tags:
   - ballot
   - propositions
