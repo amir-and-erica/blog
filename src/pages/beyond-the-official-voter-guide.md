@@ -33,13 +33,13 @@ Our guide is formatted and created primarily for web, so that you can view it fr
 * sound, video to bring it to real life
 * a variety of page layouts
 
-I have a feeling you might already understand the benefits of webpages over a printed page. By making the information more approachable we hope that it doesn't feel like homework to vote. Understanding the issues requires some effort, and our goal is to make it as effortless as possible. Design is our main tool to do that.
+I have a feeling you might already understand the benefits of webpages over a printed page. By making the information more approachable we hope that it doesn't feel like homework to vote. Understanding the issues requires some effort, and our goal is to make it as effortless as possible using design as our primary tool.
 
 ## We keep our guide updated
 
 The Ballot Simplification Committee, a group of five, unpaid members, must finalize the digests that go into the official voter guide [85 days](http://zesty.ca/vstf/sfmec.html#s535) prior to the election. The committee holds [public hearings](https://sfelections.sfgov.org/ballot-simplification-committee-information-%E2%80%93-november-6-2018-consolidated-general-election) to whittle down the language and to address any public comment about the digests. This election, the guide needs to be finalized by August 31, long before a vast majority of residents even hear about the measures.
 
-Having outdated information can be dangerous. In the primary election this year on June 5, we voted on [Prop H](https://archives.bythebay.cool/election/sf-prop-h), which would have enacted a Taser usage policy for the SFPD. After the measure was put into the ballot, the Police Commission passed a Taser usage policy _materially different_ from the one the public was about to vote on. Had Prop H passed, it would have replaced the Police Commission's policy, but the official voter guide did not explain this. Because it had to be printed and mailed by a certain date, it had left out the crux of the decision before the voters.
+Having outdated information can be dangerous. In the primary election this year on June 5, we voted on [Prop H](https://archives.bythebay.cool/election/sf-prop-h), which would have enacted a Taser usage policy for the SFPD. After the measure was approved for the ballot, the Police Commission passed a Taser usage policy _materially different_ from the one the public was about to vote on. Had Prop H passed, it would have replaced the Police Commission's policy, but the official voter guide merely mentioned "The [Police] Commission is developing a pol­icy on tasers." When in fact, by the time people voted, the Police Commission had passed a usage policy.
 
 At By The Bay, we update our guide on a daily basis, giving you news that might affect your understanding and vote – just another benefit of a webpage.
 
