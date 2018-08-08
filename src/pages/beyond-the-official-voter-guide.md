@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Beyond the official voter guide
 description: How By The Bay differs from the official guide to give you more
 author: Jimmy Chion
+image: /img/voterguide.jpg
 smTitle: Who writes the SF mailed ballot guide?
 smDescription: Behind the SF Ballot Simplification Committee
 color: purple
