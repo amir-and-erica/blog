@@ -96,7 +96,16 @@ const Head = (props) => (
               "logo": {
                 "@type": "ImageObject",
                 "url":"https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png"
-              }
+              },
+              "description": "By The Bay provides local political and election information for the Bay Area in California",
+              "email": "hi@bytheybay.cool",
+              "founder": ["Jimmy Chion", "Yvonne Leow"],
+              "logo": "https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png",
+              "sameAs": [
+                "https://www.facebook.com/bythebaydotcool/",
+                "https://twitter.com/bythebaydotcool/",
+                "https://www.instagram.com/bythebaydotcool/"
+              ]
             },
             "author": {
               "@type": "Person",
