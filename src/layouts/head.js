@@ -77,39 +77,6 @@ const Head = (props) => (
       <script type="application/ld+json">{`
         {
           "@context": "http://schema.org",
-          "@type": "Blog",
-          "name": "By The Way",
-          "alternateName": "By The Bay blog",
-          "headline":"By The Bay's and ballot.fyi's blog",
-          "url": "https://blog.bythebay.cool/",
-          "copyrightYear":"2018",
-          "keywords":"By The Bay blog, Bay Area elections",
-          "description":"A sidebar and blog for local politics and elections",
-          "creator":{
-            "@type": "Organization",
-            "name": "By The Bay",
-            "description": "By The Bay provides local political and election information for the Bay Area in California",
-            "email": "hi@bytheybay.cool",
-            "contactPoint": [
-            	{
-                "@type": "ContactPoint",
-                "telephone": "+1 (415) 617-5970",
-                "contactType": "customer service"
-            	}
-            ],
-            "founder": ["Jimmy Chion", "Yvonne Leow"],
-            "logo": "https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png",
-            "sameAs": [
-            	"https://www.facebook.com/bythebaydotcool/",
-              "https://twitter.com/bythebaydotcool/",
-              "https://www.instagram.com/bythebaydotcool/"
-            ]
-          },
-          "image":{
-            "@type":"ImageObject",
-            "representativeOfPage":"true",
-            "URL": "https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png"
-          },
           "blogPost": {
             "@type": "BlogPosting",
             "headline": "${props.title && (props.title).replace(/\"/g, "'")}",
@@ -118,10 +85,13 @@ const Head = (props) => (
             "datePublished": "${props.dateCreated || ""}",
             "dateCreated": "${props.dateCreated || ""}",
             "dateModified": "${props.dateModified || props.date || ""}",
-            "mainEntityOfPage":"Blog post of By The Bay",
+            "mainEntityOfPage":{
+              "@type": "WebPage",
+              "@id": "${props.url}"
+            },
             "Publisher": {
               "@type": "Organization",
-              "name":"By The Way",
+              "name":"By The Bay",
               "logo": {
                 "@type": "ImageObject",
                 "url":"https://s3-us-west-1.amazonaws.com/bythebay.cool/static/media/touch-icon-192x192.e8ebf5db.png"
