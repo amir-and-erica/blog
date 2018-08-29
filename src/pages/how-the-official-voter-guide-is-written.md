@@ -19,7 +19,7 @@ tags:
 ---
 To many San Francisco residents, election season means a mailbox stuffed with election mailers. Among the glossy campaign ads, one of the only nonpartisan things residents will receive is the official voter guide sent out by City Hall, a booklet of digests, arguments, and definitions of wonky terms for the ballot initiatives. It's a valuable resource that aims to translate legalese into plain English, not unlike By The Bay.
 
-The Ballot Simplification Committee, a group of five, unpaid members, writes the digests that you receive. Last week, I attended the [public hearings](https://sfelections.sfgov.org/ballot-simplification-committee-information-%E2%80%93-november-6-2018-consolidated-general-election) for the writing of the five SF ballot measures to understand the nuances of their word choice, and to see what the process is like. Here's what I found.
+The Ballot Simplification Committee, a group of five, unpaid members, writes the digests that you receive. Earlier this month, I attended the [public hearings](https://sfelections.sfgov.org/ballot-simplification-committee-information-%E2%80%93-november-6-2018-consolidated-general-election) for the writing of the five SF ballot measures to understand the nuances of their word choice, and to see what the process is like. Here's what I found.
 
 ## Its members are nominated
 
